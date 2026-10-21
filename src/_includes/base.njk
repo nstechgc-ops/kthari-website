@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{ seoTitle or site.siteName }}</title>
+{% if seoDescription %}<meta name="description" content="{{ seoDescription }}">{% endif %}
+<link rel="canonical" href="{{ site.url }}{{ page.url | replace('.html','') }}">
+<meta name="robots" content="{{ robots or 'index,follow,max-image-preview:large' }}">
+<meta name="author" content="{{ site.author }}">
+{% set share = (shareImage or site.shareImage) | absUrl(site.url) %}
+<meta property="og:type" content="{{ ogType or 'website' }}">
+<meta property="og:site_name" content="{{ site.siteName }}">
+<meta property="og:title" content="{{ seoTitle or site.siteName }}">
+{% if seoDescription %}<meta property="og:description" content="{{ seoDescription }}">{% endif %}
+<meta property="og:url" content="{{ site.url }}{{ page.url | replace('.html','') }}">
+{% if share %}<meta property="og:image" content="{{ share }}">
+<meta name="twitter:image" content="{{ share }}">{% endif %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ seoTitle or site.siteName }}">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/styles.css">
+{% if schema %}<script type="application/ld+json">{{ schema | dump | safe }}</script>{% endif %}
+</head>
+<body>
+{% if not bare %}
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="/">K'<b>THARI</b></a>
+    <div class="navlinks">
+      <a href="/book" class="hide-sm"{% if nav == 'book' %} aria-current="page"{% endif %}>The Book</a>
+      <a href="/author" class="hide-sm"{% if nav == 'author' %} aria-current="page"{% endif %}>The Author</a>
+      <a href="/gallery" class="hide-sm"{% if nav == 'gallery' %} aria-current="page"{% endif %}>Gallery</a>
+      {% if collections.news.length %}<a href="/news" class="hide-sm"{% if nav == 'news' %} aria-current="page"{% endif %}>News</a>{% endif %}
+      <a class="btn" href="{{ site.buyUrl }}" target="_blank" rel="noopener">{{ site.navButton }}</a>
+    </div>
+  </div>
+</nav>
+{% endif %}
+{{ content | safe }}
+{% if not bare %}
+<footer class="foot">
+  <div class="wrap">
+    <div>&copy; <span id="yr">2026</span> {{ site.author }} &middot; {{ site.siteName }}</div>
+    <nav class="fl">
+      <a href="/">Home</a>
+      <a href="/book">The Book</a>
+      <a href="/author">The Author</a>
+      <a href="/gallery">Gallery</a>
+      <a href="{{ site.buyUrl }}" target="_blank" rel="noopener">Buy</a>
+      {% for s in site.socials %}<a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.label }}</a>{% endfor %}
+    </nav>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+{% endif %}
+</body>
+</html>

@@ -1,0 +1,129 @@
+---js
+{
+  layout: "base.njk",
+  permalink: "/index.html",
+  nav: "home",
+  ogType: "book",
+  eleventyComputed: {
+    seoTitle: (d) => d.home.seoTitle,
+    seoDescription: (d) => d.home.seoDescription,
+    shareImage: (d) => d.site.shareImage || d.book.cover,
+    schema: (d) => ({
+      "@context": "https://schema.org",
+      "@graph": [
+        { "@type": "WebSite", "@id": d.site.url + "/#website", url: d.site.url + "/", name: d.site.siteName,
+          description: "Official home of the K'Thari saga by " + d.site.author + ".", inLanguage: "en" },
+        { "@type": "Person", "@id": d.site.url + "/author#person", name: d.site.author, alternateName: "NS Tech",
+          jobTitle: "Author", url: d.site.url + "/author", nationality: "Cameroonian",
+          description: "Cameroonian-born, Florida-based author of The Seven Kingdoms of K'Thari, an African epic fantasy saga.",
+          sameAs: [d.site.followUrl, ...d.site.socials.map((s) => s.url)] },
+        { "@type": "Book", "@id": d.site.url + "/book#book", name: "The Seven Kingdoms of K'Thari: Blood of the Seven",
+          author: { "@id": d.site.url + "/author#person" }, url: d.site.url + "/book",
+          ...(d.book.cover ? { image: d.site.url + d.book.cover } : {}),
+          inLanguage: "en", genre: ["Epic fantasy", "African fantasy", "Fantasy fiction"], position: 1,
+          isPartOf: { "@type": "BookSeries", name: "The Seven Kingdoms of K'Thari" },
+          description: d.home.seoDescription,
+          offers: { "@type": "Offer", url: d.site.buyUrl, availability: "https://schema.org/InStock" } }
+      ]
+    })
+  }
+}
+---
+{% from "macros.njk" import pic, kingdomGrid %}
+<header class="hero"{% if home.heroBackground %} style="background-image:linear-gradient(rgba(14,11,7,.72),rgba(14,11,7,.92)),url('{{ home.heroBackground }}');background-size:cover;background-position:center"{% endif %}>
+  <div class="wrap">
+    <p class="eyebrow">{{ home.heroEyebrow }}</p>
+    <h1>{{ home.heroTitle }}</h1>
+    <p class="tag">{{ home.heroTagline }}</p>
+    <div class="orn" aria-hidden="true">&#9670;&#9671;&#9670;</div>
+    <div class="btnrow">
+      <a class="btn" href="{{ site.buyUrl }}" target="_blank" rel="noopener">{{ home.heroButton }}</a>
+      <a class="btn ghost" href="/book">Enter the World</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  {% set yt = home.trailerUrl | youtubeId %}
+  {% if yt %}
+  <section class="center">
+    <div class="wrap">
+      <p class="eyebrow">Book I</p>
+      <h2>{{ home.trailerHeading }}</h2>
+      <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/{{ yt }}" title="{{ home.trailerHeading }}" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="center">
+    <div class="wrap">
+      <p class="eyebrow">{{ home.cosmologyEyebrow }}</p>
+      <h2>{{ home.cosmologyHeading }}</h2>
+      <p class="lead">{{ home.cosmologyText }}</p>
+    </div>
+  </section>
+
+  <section id="kingdoms">
+    <div class="wrap">
+      <p class="eyebrow center">The Kingdoms of K'Thari</p>
+      <h2 class="center">{{ home.kingdomsHeading }}</h2>
+      {{ kingdomGrid(kingdoms) }}
+    </div>
+  </section>
+
+  <section style="background:var(--ink-2);border-block:1px solid var(--line-2)">
+    <div class="wrap">
+      <div class="split">
+        <div class="media"><a href="/book" aria-label="{{ home.bookHeading }}">{{ pic(book.cover, book.title + " book cover", book.title) }}</a></div>
+        <div class="prose">
+          <p class="eyebrow">{{ home.bookEyebrow }}</p>
+          <h2>{{ home.bookHeading }}</h2>
+          {{ home.bookText | md | safe }}
+          <div class="btnrow">
+            <a class="btn" href="{{ site.buyUrl }}" target="_blank" rel="noopener">Get the Book</a>
+            <a class="btn ghost" href="/book">Full Synopsis</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="split rev">
+        <div class="media"><a href="/author" aria-label="About {{ site.author }}">{{ pic(author.photo, site.author, site.author, "square") }}</a></div>
+        <div class="prose">
+          <p class="eyebrow">The Author</p>
+          <h2>{{ home.authorHeading }}</h2>
+          {{ home.authorText | md | safe }}
+          <div class="btnrow"><a class="btn ghost" href="/author">Read His Story</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% if collections.news.length %}
+  <section style="background:var(--ink-2);border-block:1px solid var(--line-2)">
+    <div class="wrap">
+      <p class="eyebrow center">From the Author</p>
+      <h2 class="center">Latest News</h2>
+      <div class="newsgrid">
+        {% for post in collections.news | head(3) %}{% include "newscard.njk" %}{% endfor %}
+      </div>
+      <div class="btnrow center" style="margin-top:2rem;justify-content:center"><a class="btn ghost" href="/news">All News</a></div>
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="band">
+    <div class="wrap">
+      <div class="orn" aria-hidden="true">&#9670;&#9671;&#9670;</div>
+      <p class="pull">{{ home.quote }}</p>
+      <p class="lead center" style="margin-top:1.4rem">{{ home.ctaText }}</p>
+      <div class="btnrow center" style="margin-top:1.4rem;justify-content:center">
+        <a class="btn" href="{{ site.buyUrl }}" target="_blank" rel="noopener">{{ home.ctaButton }}</a>
+        <a class="btn ghost" href="{{ site.followUrl }}" target="_blank" rel="noopener">Follow the Author</a>
+      </div>
+    </div>
+  </section>
+</main>

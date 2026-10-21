@@ -1,0 +1,63 @@
+---js
+{
+  layout: "base.njk",
+  permalink: "/author.html",
+  nav: "author",
+  ogType: "profile",
+  eleventyComputed: {
+    seoTitle: (d) => d.author.seoTitle,
+    seoDescription: (d) => d.author.seoDescription,
+    shareImage: (d) => d.author.photo || d.site.shareImage,
+    schema: (d) => ({
+      "@context": "https://schema.org", "@type": "Person", "@id": d.site.url + "/author#person",
+      name: d.site.author, alternateName: "NS Tech", jobTitle: "Author", url: d.site.url + "/author",
+      ...(d.author.photo ? { image: d.site.url + d.author.photo } : {}),
+      nationality: "Cameroonian", homeLocation: { "@type": "Place", name: "Florida, USA" },
+      description: d.author.seoDescription,
+      knowsAbout: ["African epic fantasy", "Worldbuilding", "Oral tradition", "African cosmology"],
+      sameAs: [d.site.followUrl, ...d.site.socials.map((s) => s.url)]
+    })
+  }
+}
+---
+{% from "macros.njk" import pic %}
+<main>
+  <section>
+    <div class="wrap">
+      <div class="split">
+        <div class="media">{{ pic(author.photo, author.name, author.name, "square") }}</div>
+        <div class="prose">
+          <p class="eyebrow">The Author</p>
+          <h1 style="font-size:clamp(2rem,5vw,3.2rem);margin-bottom:1.2rem">{{ author.name }}</h1>
+          {{ author.intro | md | safe }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band center">
+    <div class="wrap">
+      <div class="orn" aria-hidden="true">&#9670;&#9671;&#9670;</div>
+      <p class="pull">{{ author.quote }}</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap prose" style="max-width:72ch;margin-inline:auto">
+      <p class="eyebrow">{{ author.storyEyebrow }}</p>
+      <h2 style="margin-bottom:1rem">{{ author.storyHeading }}</h2>
+      {{ author.story | md | safe }}
+    </div>
+  </section>
+
+  <section class="center">
+    <div class="wrap">
+      <h2>{{ author.closingHeading }}</h2>
+      <p class="lead center">{{ author.closingText }}</p>
+      <div class="btnrow center" style="margin-top:1.4rem;justify-content:center">
+        <a class="btn" href="{{ site.buyUrl }}" target="_blank" rel="noopener">Read Book I</a>
+        <a class="btn ghost" href="{{ site.followUrl }}" target="_blank" rel="noopener">Follow the Author</a>
+      </div>
+    </div>
+  </section>
+</main>

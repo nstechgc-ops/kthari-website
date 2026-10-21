@@ -1,0 +1,23 @@
+---
+layout: base.njk
+permalink: /news.html
+nav: news
+seoTitle: "News — The Seven Kingdoms of K'Thari"
+seoDescription: "News and updates from Njintieuh Sieni and the K'Thari saga."
+---
+<main>
+  <section class="center" style="padding-bottom:0">
+    <div class="wrap">
+      <p class="eyebrow">From the Author</p>
+      <h1 style="font-size:clamp(2rem,5vw,3.2rem)">News</h1>
+      <div class="orn" aria-hidden="true">&#9670;&#9671;&#9670;</div>
+    </div>
+  </section>
+  <section style="padding-top:1rem">
+    <div class="wrap">
+      {% if collections.news.length %}
+      <div class="newsgrid">{% for post in collections.news %}{% include "newscard.njk" %}{% endfor %}</div>
+      {% else %}<p class="lead center" style="margin-inline:auto">No news yet.</p>{% endif %}
+    </div>
+  </section>
+</main>

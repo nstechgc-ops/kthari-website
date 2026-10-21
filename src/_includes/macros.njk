@@ -1,0 +1,24 @@
+{# Shows the uploaded picture, or a gold placeholder until one is added #}
+{% macro pic(src, alt, label, shape='') %}
+{% if src %}<img class="cover pic {{ shape }}" src="{{ src }}" alt="{{ alt }}" loading="lazy">
+{% else %}<div class="ph {{ shape }}"><span class="plabel">{{ label }}</span><span class="pnote">Add an image in the editor</span></div>{% endif %}
+{% endmacro %}
+
+{% macro kingdomGrid(k, short=false) %}
+<div class="kgrid">
+  {% for x in k.kingdoms %}
+  <article class="kcard">
+    {% if x.image %}<img class="kimg" src="{{ x.image }}" alt="{{ x.beast }}" loading="lazy">{% endif %}
+    <div class="beast">{{ x.beast }}</div>
+    <h3>{{ x.name }}</h3>
+    <div class="native">{{ x.native }}</div>
+    {% if x.traits %}<div class="traits">{{ x.traits }}</div>{% endif %}
+  </article>
+  {% endfor %}
+  <article class="kcard secret">
+    <div class="beast">{{ k.secretLabel }}</div>
+    <h3>{{ k.secretName }}</h3>
+    <div class="native">{{ k.secretText }}</div>
+  </article>
+</div>
+{% endmacro %}

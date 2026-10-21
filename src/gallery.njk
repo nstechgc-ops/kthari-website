@@ -1,0 +1,38 @@
+---js
+{
+  layout: "base.njk",
+  permalink: "/gallery.html",
+  nav: "gallery",
+  eleventyComputed: {
+    seoTitle: (d) => d.gallery.seoTitle,
+    seoDescription: (d) => d.gallery.seoDescription,
+    shareImage: (d) => (d.gallery.images[0] && d.gallery.images[0].image) || d.site.shareImage
+  }
+}
+---
+<main>
+  <section class="center" style="padding-bottom:0">
+    <div class="wrap">
+      <p class="eyebrow">{{ gallery.eyebrow }}</p>
+      <h1 style="font-size:clamp(2rem,5vw,3.2rem)">{{ gallery.heading }}</h1>
+      <p class="lead">{{ gallery.intro }}</p>
+      <div class="orn" aria-hidden="true">&#9670;&#9671;&#9670;</div>
+    </div>
+  </section>
+  <section style="padding-top:1rem">
+    <div class="wrap">
+      {% if gallery.images.length %}
+      <div class="gallery">
+        {% for g in gallery.images %}{% if g.image %}
+        <figure>
+          <a href="{{ g.image }}" target="_blank" rel="noopener"><img src="{{ g.image }}" alt="{{ g.caption or 'Art from The Seven Kingdoms of K\'Thari' }}" loading="lazy"></a>
+          {% if g.caption %}<figcaption>{{ g.caption }}</figcaption>{% endif %}
+        </figure>
+        {% endif %}{% endfor %}
+      </div>
+      {% else %}
+      <p class="lead center" style="margin-inline:auto">New art from K'Thari is coming soon.</p>
+      {% endif %}
+    </div>
+  </section>
+</main>

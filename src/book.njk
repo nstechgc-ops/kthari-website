@@ -1,0 +1,82 @@
+---js
+{
+  layout: "base.njk",
+  permalink: "/book.html",
+  nav: "book",
+  ogType: "book",
+  eleventyComputed: {
+    seoTitle: (d) => d.book.seoTitle,
+    seoDescription: (d) => d.book.seoDescription,
+    shareImage: (d) => d.site.shareImage || d.book.cover,
+    schema: (d) => ({
+      "@context": "https://schema.org", "@type": "Book", "@id": d.site.url + "/book#book",
+      name: "The Seven Kingdoms of K'Thari: " + d.book.title, alternateName: d.book.title,
+      author: { "@type": "Person", name: d.site.author, url: d.site.url + "/author" },
+      url: d.site.url + "/book", ...(d.book.cover ? { image: d.site.url + d.book.cover } : {}),
+      inLanguage: "en", genre: ["Epic fantasy", "African fantasy", "Fantasy fiction"],
+      isPartOf: { "@type": "BookSeries", name: "The Seven Kingdoms of K'Thari" }, position: 1,
+      description: d.book.seoDescription,
+      offers: { "@type": "Offer", url: d.site.buyUrl, availability: "https://schema.org/InStock" },
+      publisher: { "@type": "Organization", name: "NS Tech Global Consulting" }
+    })
+  }
+}
+---
+{% from "macros.njk" import pic, kingdomGrid %}
+<main>
+  <section>
+    <div class="wrap">
+      <div class="split">
+        <div class="media">{{ pic(book.cover, book.title + " book cover", book.title) }}</div>
+        <div class="prose">
+          <p class="eyebrow">{{ book.eyebrow }}</p>
+          <h1 style="font-size:clamp(2rem,5vw,3.2rem)">{{ book.title }}</h1>
+          <p class="tag" style="color:var(--muted);font-style:italic;font-size:1.2rem;margin:.4em 0 1.4rem">{{ book.tagline }}</p>
+          {{ book.synopsis | md | safe }}
+          <div class="buys">
+            {% for r in book.retailers %}<a href="{{ r.url }}" target="_blank" rel="noopener">{{ r.label }}</a>{% endfor %}
+          </div>
+          <dl class="meta">
+            {% for m in book.details %}<div><dt>{{ m.label }}</dt><dd>{{ m.value }}</dd></div>{% endfor %}
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band center">
+    <div class="wrap">
+      <div class="orn" aria-hidden="true">&#9670;&#9671;&#9670;</div>
+      <p class="pull">{{ book.quote }}</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow center">{{ book.mapEyebrow }}</p>
+      <h2 class="center">{{ book.mapHeading }}</h2>
+      <p class="lead center">{{ book.mapText }}</p>
+      <div class="media" style="margin-top:2rem">{{ pic(book.map, "The map of K'Thari", "The Map of K'Thari", "wide") }}</div>
+    </div>
+  </section>
+
+  <section id="kingdoms" style="background:var(--ink-2);border-block:1px solid var(--line-2)">
+    <div class="wrap">
+      <p class="eyebrow center">The Cosmology of K'Thari</p>
+      <h2 class="center">The Seven Kingdoms</h2>
+      <p class="lead center">{{ book.kingdomsText }}</p>
+      {{ kingdomGrid(kingdoms) }}
+    </div>
+  </section>
+
+  <section class="center">
+    <div class="wrap">
+      <h2>{{ book.closingHeading }}</h2>
+      <p class="lead center">{{ book.closingText }}</p>
+      <div class="btnrow center" style="margin-top:1.4rem;justify-content:center">
+        <a class="btn" href="{{ site.buyUrl }}" target="_blank" rel="noopener">{{ book.closingButton }}</a>
+        <a class="btn ghost" href="/author">Meet the Author</a>
+      </div>
+    </div>
+  </section>
+</main>

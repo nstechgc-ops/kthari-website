@@ -1,0 +1,14 @@
+{
+  "kingdoms": [
+    { "beast": "The Lion Kingdom", "name": "Kingdom of the Sun", "native": "Ūsángà wà Kofári", "traits": "Sun · Law · Conquest · Rule", "image": "" },
+    { "beast": "The Elephant Kingdom", "name": "The Land That Remembers", "native": "Nàyámbé-Tárà", "traits": "Memory · Endurance · Ancestral Law", "image": "" },
+    { "beast": "The Crocodile Kingdom", "name": "The Waiting Waters", "native": "Mákòndaré", "traits": "Rivers · Patience · Stillness", "image": "" },
+    { "beast": "The Leopard Kingdom", "name": "The Hidden Crown", "native": "Sényà-Nórù", "traits": "Stealth · Intelligence · Precision", "image": "" },
+    { "beast": "The Gorilla Kingdom", "name": "The Unbroken Heights", "native": "Mbárù-Kéntà", "traits": "Strength · Discipline · Restraint", "image": "" },
+    { "beast": "The Serpent Kingdom", "name": "The Coiled Dominion", "native": "Bákungà", "traits": "Secrets · Manipulation · Silent Power", "image": "" },
+    { "beast": "The Hyena Kingdom", "name": "The Devouring Lands", "native": "Zákhàrà-Vé", "traits": "Hunger · Corruption · War", "image": "" }
+  ],
+  "secretLabel": "Not a Kingdom",
+  "secretName": "K'Thari-Úmbrà — The Secret Lands",
+  "secretText": "That which belongs to all. And the Owl watches over every crown."
+}

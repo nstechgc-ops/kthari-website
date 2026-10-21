@@ -1,0 +1,17 @@
+---
+layout: base.njk
+---
+<main>
+  <article>
+    <section style="padding-bottom:0">
+      <div class="wrap" style="max-width:72ch">
+        <p class="eyebrow"><a href="/news">News</a> &middot; {{ page.date | niceDate }}</p>
+        <h1 style="font-size:clamp(1.9rem,5vw,3rem);margin:.4rem 0 1.4rem">{{ title }}</h1>
+        {% if image %}<img class="cover" src="{{ image }}" alt="" style="width:100%;margin-bottom:1.6rem">{% endif %}
+      </div>
+    </section>
+    <section style="padding-top:0">
+      <div class="wrap prose" style="max-width:72ch">{{ content | safe }}</div>
+    </section>
+  </article>
+</main>

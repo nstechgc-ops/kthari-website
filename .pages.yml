@@ -1,0 +1,158 @@
+# Pages CMS editor for kthari.com — https://app.pagescms.org
+# Every Save updates GitHub, and Cloudflare republishes the site in about a minute.
+media:
+  input: src/images
+  output: /images
+
+content:
+  - name: home
+    label: Home page
+    type: file
+    path: src/_data/home.json
+    fields:
+      - { name: heroBackground, label: "Top banner background image (optional)", type: image }
+      - { name: heroEyebrow, label: "Small line above the title", type: string }
+      - { name: heroTitle, label: "Main title", type: string }
+      - { name: heroTagline, label: "Tagline", type: text }
+      - { name: heroButton, label: "Main button text", type: string }
+      - { name: trailerUrl, label: "Trailer — YouTube link (leave empty to hide)", type: string }
+      - { name: trailerHeading, label: "Trailer heading", type: string }
+      - { name: cosmologyEyebrow, label: "Cosmology — small line", type: string }
+      - { name: cosmologyHeading, label: "Cosmology — heading", type: string }
+      - { name: cosmologyText, label: "Cosmology — text", type: text }
+      - { name: kingdomsHeading, label: "Kingdoms section heading", type: string }
+      - { name: bookEyebrow, label: "Book teaser — small line", type: string }
+      - { name: bookHeading, label: "Book teaser — heading", type: string }
+      - { name: bookText, label: "Book teaser — text", type: rich-text, options: { format: markdown } }
+      - { name: authorHeading, label: "Author teaser — heading", type: string }
+      - { name: authorText, label: "Author teaser — text", type: rich-text, options: { format: markdown } }
+      - { name: quote, label: "Quote banner", type: text }
+      - { name: ctaText, label: "Closing call-to-action text", type: text }
+      - { name: ctaButton, label: "Closing button text", type: string }
+      - { name: seoTitle, label: "Google title (SEO)", type: string }
+      - { name: seoDescription, label: "Google description (SEO)", type: text }
+
+  - name: book
+    label: Book page
+    type: file
+    path: src/_data/book.json
+    fields:
+      - { name: cover, label: "Book cover", type: image }
+      - { name: eyebrow, label: "Small line above the title", type: string }
+      - { name: title, label: "Book title", type: string }
+      - { name: tagline, label: "Tagline", type: text }
+      - { name: synopsis, label: "Synopsis", type: rich-text, options: { format: markdown } }
+      - name: retailers
+        label: "Buy buttons"
+        type: object
+        list: true
+        fields:
+          - { name: label, label: "Button text", type: string }
+          - { name: url, label: "Link", type: string }
+      - name: details
+        label: "Book details boxes"
+        type: object
+        list: true
+        fields:
+          - { name: label, label: "Label", type: string }
+          - { name: value, label: "Value", type: string }
+      - { name: quote, label: "Quote banner", type: text }
+      - { name: map, label: "Map of K'Thari", type: image }
+      - { name: mapEyebrow, label: "Map — small line", type: string }
+      - { name: mapHeading, label: "Map — heading", type: string }
+      - { name: mapText, label: "Map — text", type: text }
+      - { name: kingdomsText, label: "Kingdoms intro text", type: text }
+      - { name: closingHeading, label: "Closing heading", type: string }
+      - { name: closingText, label: "Closing text", type: text }
+      - { name: closingButton, label: "Closing button text", type: string }
+      - { name: seoTitle, label: "Google title (SEO)", type: string }
+      - { name: seoDescription, label: "Google description (SEO)", type: text }
+
+  - name: author
+    label: Author page
+    type: file
+    path: src/_data/author.json
+    fields:
+      - { name: photo, label: "Author photo", type: image }
+      - { name: name, label: "Name", type: string }
+      - { name: intro, label: "Intro", type: rich-text, options: { format: markdown } }
+      - { name: quote, label: "Quote banner", type: text }
+      - { name: storyEyebrow, label: "Story — small line", type: string }
+      - { name: storyHeading, label: "Story — heading", type: string }
+      - { name: story, label: "Story", type: rich-text, options: { format: markdown } }
+      - { name: closingHeading, label: "Closing heading", type: string }
+      - { name: closingText, label: "Closing text", type: text }
+      - { name: seoTitle, label: "Google title (SEO)", type: string }
+      - { name: seoDescription, label: "Google description (SEO)", type: text }
+
+  - name: gallery
+    label: Gallery
+    type: file
+    path: src/_data/gallery.json
+    fields:
+      - { name: eyebrow, label: "Small line above the title", type: string }
+      - { name: heading, label: "Heading", type: string }
+      - { name: intro, label: "Intro text", type: text }
+      - name: images
+        label: "Pictures"
+        type: object
+        list: true
+        fields:
+          - { name: image, label: "Picture", type: image }
+          - { name: caption, label: "Caption (optional)", type: string }
+      - { name: seoTitle, label: "Google title (SEO)", type: string }
+      - { name: seoDescription, label: "Google description (SEO)", type: text }
+
+  - name: kingdoms
+    label: The Seven Kingdoms
+    type: file
+    path: src/_data/kingdoms.json
+    fields:
+      - name: kingdoms
+        label: "Kingdoms"
+        type: object
+        list: true
+        fields:
+          - { name: beast, label: "Kingdom (e.g. The Lion Kingdom)", type: string }
+          - { name: name, label: "Title", type: string }
+          - { name: native, label: "Native name", type: string }
+          - { name: traits, label: "Traits", type: string }
+          - { name: image, label: "Picture (optional)", type: image }
+      - { name: secretLabel, label: "Secret Lands — small line", type: string }
+      - { name: secretName, label: "Secret Lands — title", type: string }
+      - { name: secretText, label: "Secret Lands — text", type: text }
+
+  - name: news
+    label: News posts
+    type: collection
+    path: src/news
+    format: yaml-frontmatter
+    filename: "{year}-{month}-{day}-{primary}.md"
+    exclude: [news.11tydata.js]
+    view: { fields: [title, date], primary: title, sort: date, order: desc }
+    fields:
+      - { name: title, label: "Title", type: string, required: true }
+      - { name: date, label: "Date", type: date, required: true }
+      - { name: summary, label: "Short summary (shown on cards and Google)", type: text }
+      - { name: image, label: "Picture (optional)", type: image }
+      - { name: body, label: "Post", type: rich-text, options: { format: markdown } }
+
+  - name: site
+    label: Site settings
+    type: file
+    path: src/_data/site.json
+    fields:
+      - { name: buyUrl, label: "Main 'Buy / Read' link (used on every button)", type: string }
+      - { name: followUrl, label: "'Follow the Author' link", type: string }
+      - { name: navButton, label: "Top-right button text", type: string }
+      - { name: shareImage, label: "Social share image (1200×630, shown when the link is posted)", type: image }
+      - name: socials
+        label: "Footer social links"
+        type: object
+        list: true
+        fields:
+          - { name: label, label: "Name (e.g. Instagram)", type: string }
+          - { name: url, label: "Link", type: string }
+      - { name: siteName, label: "Site name", type: string }
+      - { name: author, label: "Author name", type: string }
+      - { name: url, label: "Website address", type: string }
