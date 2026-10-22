@@ -15,7 +15,7 @@
       nationality: "Cameroonian", homeLocation: { "@type": "Place", name: "Florida, USA" },
       description: d.author.seoDescription,
       knowsAbout: ["African epic fantasy", "Worldbuilding", "Oral tradition", "African cosmology"],
-      sameAs: [d.site.followUrl, ...d.site.socials.map((s) => s.url)]
+      sameAs: [d.site.followUrl, ...(d.author.socials || []).map((s) => s.url)]
     })
   }
 }
@@ -39,8 +39,8 @@
         <a class="btn" href="{{ site.buyUrl }}" target="_blank" rel="noopener">Read Book I</a>
         <a class="btn ghost" href="#story">His Story</a>
       </div>
-      {% if site.socials.length %}
-      <nav class="asocial" aria-label="Follow {{ author.name }}">{% for s in site.socials %}<a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.label }}</a>{% endfor %}</nav>
+      {% if author.socials and author.socials.length %}
+      <nav class="asocial" aria-label="Follow {{ author.name }}">{% for s in author.socials %}<a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.label }}</a>{% endfor %}</nav>
       {% endif %}
     </div>
   </header>

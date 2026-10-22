@@ -16,7 +16,7 @@
         { "@type": "Person", "@id": d.site.url + "/author#person", name: d.site.author, alternateName: "NS Tech",
           jobTitle: "Author", url: d.site.url + "/author", nationality: "Cameroonian",
           description: "Cameroonian-born, Florida-based author of The Seven Kingdoms of K'Thari, an African epic fantasy saga.",
-          sameAs: [d.site.followUrl, ...d.site.socials.map((s) => s.url)] },
+          sameAs: [d.site.followUrl, ...(d.author.socials || []).map((s) => s.url)] },
         { "@type": "Book", "@id": d.site.url + "/book#book", name: "The Seven Kingdoms of K'Thari: Blood of the Seven",
           author: { "@id": d.site.url + "/author#person" }, url: d.site.url + "/book",
           ...(d.book.cover ? { image: d.site.url + d.book.cover } : {}),

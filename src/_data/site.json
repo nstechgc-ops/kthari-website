@@ -8,20 +8,16 @@
   "shareImage": "",
   "socials": [
     {
+      "label": "Facebook",
+      "url": "https://www.facebook.com/profile.php?id=61586218464633"
+    },
+    {
       "label": "Amazon",
       "url": "https://www.amazon.com/stores/Njintieuh-Sieni/author/B0HK2Q8LVM"
     },
     {
-      "label": "LinkedIn",
-      "url": "https://www.linkedin.com/in/njintieuh-sieni-3a236199/"
-    },
-    {
       "label": "Goodreads",
       "url": "https://www.goodreads.com/author/show/70293174.Njintieuh_Sieni"
-    },
-    {
-      "label": "Facebook",
-      "url": "https://www.facebook.com/njintieuh.sieni"
     }
   ]
 }

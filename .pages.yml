@@ -82,6 +82,13 @@ content:
         list: true
         fields:
           - { name: text, label: "Fact", type: string }
+      - name: socials
+        label: "Author's personal links (shown on the Author page)"
+        type: object
+        list: true
+        fields:
+          - { name: label, label: "Name (e.g. LinkedIn)", type: string }
+          - { name: url, label: "Link", type: string }
       - { name: intro, label: "Intro", type: rich-text, options: { format: markdown } }
       - { name: quote, label: "Quote banner", type: text }
       - { name: storyEyebrow, label: "Story — small line", type: string }
@@ -157,7 +164,7 @@ content:
       - { name: navButton, label: "Top-right button text", type: string }
       - { name: shareImage, label: "Social share image (1200×630, shown when the link is posted)", type: image }
       - name: socials
-        label: "Footer social links"
+        label: "K'Thari social links (shown in the footer on every page)"
         type: object
         list: true
         fields:
