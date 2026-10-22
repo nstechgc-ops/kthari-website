@@ -179,6 +179,32 @@ content:
       - { name: secretDescription, label: "Secret Lands — description (pop-up)", type: text }
       - { name: secretImage, label: "Secret Lands — picture (the Owl)", type: image }
 
+  - name: reviews
+    label: Reviews
+    type: file
+    path: src/_data/reviews.json
+    fields:
+      - { name: heading, label: "Heading", type: string }
+      - { name: intro, label: "Intro", type: text }
+      - name: links
+        label: "Review buttons"
+        type: object
+        list: true
+        fields:
+          - { name: label, label: "Button text", type: string }
+          - { name: url, label: "Link", type: string }
+      - { name: email, label: "Email for reader messages", type: string }
+      - { name: quotesHeading, label: "Reader quotes heading", type: string }
+      - name: quotes
+        label: "Reader quotes (copy approved reviews here)"
+        type: object
+        list: true
+        fields:
+          - { name: text, label: "Quote", type: text }
+          - { name: name, label: "Reader name", type: string }
+          - { name: source, label: "Source (e.g. Amazon, Goodreads)", type: string }
+          - { name: stars, label: "Stars (1-5)", type: number }
+
   - name: news
     label: News posts
     type: collection

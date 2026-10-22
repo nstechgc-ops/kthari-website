@@ -2,7 +2,7 @@
 title: "Blood of the Seven is here"
 date: 2026-09-13
 summary: "Book I of The Seven Kingdoms of K'Thari is out now in illustrated paperback and eBook."
-image: ""
+image: "/images/cover-book1.jpg"
 ---
 *The Seven Kingdoms of K'Thari: Blood of the Seven* is out now — the first book of a planned twelve-volume African epic fantasy saga.
 

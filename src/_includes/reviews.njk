@@ -1,0 +1,25 @@
+{% set rv = reviews %}
+<section class="reviews center" id="reviews">
+  <div class="wrap">
+    <p class="eyebrow">{{ rv.eyebrow }}</p>
+    <h2>{{ rv.heading }}</h2>
+    <div class="orn" aria-hidden="true">&#9670;&#9671;&#9670;</div>
+    <p class="lead">{{ rv.intro }}</p>
+    <div class="btnrow" style="justify-content:center;margin-top:1.6rem">
+      {% for l in rv.links %}<a class="btn" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>{% endfor %}
+      {% if rv.email %}<a class="btn ghost" href="mailto:{{ rv.email }}?subject=My%20review%20of%20Blood%20of%20the%20Seven">{{ rv.emailLabel }}</a>{% endif %}
+    </div>
+    {% if rv.quotes and rv.quotes.length %}
+    <h3 class="rvh">{{ rv.quotesHeading }}</h3>
+    <div class="rvgrid">
+      {% for q in rv.quotes %}
+      <figure class="rvcard">
+        {% if q.stars %}<div class="rvstars" aria-label="{{ q.stars }} out of 5">{% for i in range(0, q.stars) %}&#9733;{% endfor %}</div>{% endif %}
+        <blockquote>“{{ q.text }}”</blockquote>
+        <figcaption>— {{ q.name }}{% if q.source %} · {{ q.source }}{% endif %}</figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>

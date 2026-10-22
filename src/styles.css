@@ -358,3 +358,13 @@ img.pic.square{max-width:300px;aspect-ratio:1/1;object-fit:cover}
 .banners-sm h2{font-size:clamp(1.25rem,3vw,1.7rem)}
 .banners-sm .lead{font-size:1.02rem}
 .banners-sm .bannersimg{max-width:640px;margin-top:1.4rem;padding:6px}
+
+/* ---------- reviews ---------- */
+.reviews{background:var(--ink-2);border-block:1px solid var(--line-2)}
+.rvh{margin:3rem 0 1.2rem;color:var(--gold-br)}
+.rvgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px;text-align:left}
+.rvcard{margin:0;padding:20px;background:linear-gradient(180deg,var(--card-2),var(--card));border:1px solid var(--line-2);border-radius:3px}
+.rvstars{color:var(--gold-br);letter-spacing:.15em}
+.rvcard blockquote{margin:.6rem 0;font-style:italic}
+.rvcard figcaption{font-family:var(--f-ui);font-size:.75rem;color:var(--muted)}
+.ncard img{object-position:center 30%}
