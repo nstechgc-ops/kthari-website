@@ -8,7 +8,7 @@
 <link rel="canonical" href="{{ site.url }}{{ page.url | replace('.html','') }}">
 <meta name="robots" content="{{ robots or 'index,follow,max-image-preview:large' }}">
 <meta name="author" content="{{ site.author }}">
-{% set share = (shareImage or site.shareImage) | absUrl(site.url) %}
+{% set share = (shareImage or site.shareImage) | u | absUrl(site.url) %}
 <meta property="og:type" content="{{ ogType or 'website' }}">
 <meta property="og:site_name" content="{{ site.siteName }}">
 <meta property="og:title" content="{{ seoTitle or site.siteName }}">
@@ -36,7 +36,16 @@
       <a href="/gallery" class="hide-sm"{% if nav == 'gallery' %} aria-current="page"{% endif %}>Gallery</a>
       {% if collections.news.length %}<a href="/news" class="hide-sm"{% if nav == 'news' %} aria-current="page"{% endif %}>News</a>{% endif %}
       <a class="btn" href="{{ site.buyUrl }}" target="_blank" rel="noopener">{{ site.navButton }}</a>
+      <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
     </div>
+  </div>
+  <div class="mnav" id="mnav" hidden>
+    <a href="/"{% if nav == 'home' %} aria-current="page"{% endif %}>Home</a>
+    <a href="/book"{% if nav == 'book' %} aria-current="page"{% endif %}>The Book</a>
+    <a href="/author"{% if nav == 'author' %} aria-current="page"{% endif %}>The Author</a>
+    <a href="/gallery"{% if nav == 'gallery' %} aria-current="page"{% endif %}>Gallery</a>
+    {% if collections.news.length %}<a href="/news"{% if nav == 'news' %} aria-current="page"{% endif %}>News</a>{% endif %}
+    <a href="/book#kingdoms">The Seven Kingdoms</a>
   </div>
 </nav>
 {% endif %}
@@ -55,7 +64,12 @@
     </nav>
   </div>
 </footer>
-<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+(function(){var b=document.querySelector('.burger'),m=document.getElementById('mnav');if(!b||!m)return;
+b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));b.setAttribute('aria-label',o?'Open menu':'Close menu');m.hidden=o;});
+m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.hidden=true;b.setAttribute('aria-expanded','false');}});})();
+</script>
 {% endif %}
 </body>
 </html>

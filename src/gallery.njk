@@ -25,7 +25,7 @@
       <div class="gallery">
         {% for g in gallery.images %}{% if g.image %}
         <figure>
-          <a href="{{ g.image }}" target="_blank" rel="noopener"><img src="{{ g.image }}" alt="{{ g.caption or 'Art from The Seven Kingdoms of K\'Thari' }}" loading="lazy"></a>
+          <a href="{{ g.image | u }}" target="_blank" rel="noopener"><img src="{{ g.image | u }}" alt="{{ g.caption or 'Art from The Seven Kingdoms of K\'Thari' }}" loading="lazy"></a>
           {% if g.caption %}<figcaption>{{ g.caption }}</figcaption>{% endif %}
         </figure>
         {% endif %}{% endfor %}

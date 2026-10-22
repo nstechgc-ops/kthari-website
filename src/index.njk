@@ -30,7 +30,7 @@
 }
 ---
 {% from "macros.njk" import pic, kingdomGrid %}
-<header class="hero"{% if home.heroBackground %} style="background-image:linear-gradient(rgba(14,11,7,.72),rgba(14,11,7,.92)),url('{{ home.heroBackground }}');background-size:cover;background-position:center"{% endif %}>
+<header class="hero"{% if home.heroBackground %} style="background-image:linear-gradient(rgba(14,11,7,.72),rgba(14,11,7,.92)),url('{{ home.heroBackground | u }}');background-size:cover;background-position:center"{% endif %}>
   <div class="wrap">
     <p class="eyebrow">{{ home.heroEyebrow }}</p>
     <h1>{{ home.heroTitle }}</h1>

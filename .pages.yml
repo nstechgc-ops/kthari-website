@@ -80,6 +80,8 @@ content:
       - { name: storyEyebrow, label: "Story — small line", type: string }
       - { name: storyHeading, label: "Story — heading", type: string }
       - { name: story, label: "Story", type: rich-text, options: { format: markdown } }
+      - { name: photo2, label: "Second picture (below the story, optional)", type: image }
+      - { name: photo2Caption, label: "Second picture caption (optional)", type: string }
       - { name: closingHeading, label: "Closing heading", type: string }
       - { name: closingText, label: "Closing text", type: text }
       - { name: seoTitle, label: "Google title (SEO)", type: string }

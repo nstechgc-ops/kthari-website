@@ -215,3 +215,22 @@ img.pic.square{max-width:300px;aspect-ratio:1/1;object-fit:cover}
 .ncard p{margin:0;color:var(--muted);font-size:1rem}
 .prose ul,.prose ol{max-width:66ch}
 .lead.center{margin-inline:auto}
+
+/* ---------- mobile menu ---------- */
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:2px;
+  width:42px;height:38px;padding:0;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px}
+.burger span{display:block;width:20px;height:2px;background:var(--gold-br);transition:.2s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mnav{display:flex;flex-direction:column;border-top:1px solid var(--line-2);background:rgba(14,11,7,.97)}
+.mnav[hidden]{display:none}
+.mnav a{font-family:var(--f-ui);font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--muted);padding:16px 20px;border-bottom:1px solid var(--line-2)}
+.mnav a[aria-current="page"],.mnav a:hover{color:var(--gold-br)}
+@media(max-width:640px){ .burger{display:inline-flex} .navlinks .btn{padding:.6em 1em;font-size:.72rem} }
+@media(min-width:641px){ .mnav{display:none!important} }
+/* feature picture */
+.feature{margin:0}
+.feature img{width:100%;height:auto}
+.feature figcaption{font-family:var(--f-ui);font-size:.8rem;letter-spacing:.04em;color:var(--muted);text-align:center;margin-top:12px}

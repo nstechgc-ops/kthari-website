@@ -50,6 +50,17 @@
     </div>
   </section>
 
+  {% if author.photo2 %}
+  <section style="padding-top:0">
+    <div class="wrap" style="max-width:900px">
+      <figure class="feature">
+        <img class="cover" src="{{ author.photo2 | u }}" alt="{{ author.photo2Caption or author.name }}" loading="lazy">
+        {% if author.photo2Caption %}<figcaption>{{ author.photo2Caption }}</figcaption>{% endif %}
+      </figure>
+    </div>
+  </section>
+  {% endif %}
+
   <section class="center">
     <div class="wrap">
       <h2>{{ author.closingHeading }}</h2>

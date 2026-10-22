@@ -19,6 +19,7 @@ export default function (eleventyConfig) {
     return m ? m[1] : "";
   });
 
+  eleventyConfig.addFilter("u", (p) => (p ? encodeURI(decodeURI(String(p))) : ""));
   eleventyConfig.addFilter("head", (arr, n) => (arr || []).slice(0, n));
   eleventyConfig.addFilter("isoDate", (d) => new Date(d).toISOString().slice(0, 10));
   eleventyConfig.addFilter("niceDate", (d) =>

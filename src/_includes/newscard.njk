@@ -1,5 +1,5 @@
 <a class="ncard" href="{{ post.url | replace('.html','') }}">
-  {% if post.data.image %}<img src="{{ post.data.image }}" alt="" loading="lazy">{% endif %}
+  {% if post.data.image %}<img src="{{ post.data.image | u }}" alt="" loading="lazy">{% endif %}
   <div class="nbody">
     <div class="beast">{{ post.date | niceDate }}</div>
     <h3>{{ post.data.title }}</h3>
