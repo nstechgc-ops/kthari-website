@@ -75,6 +75,13 @@ content:
     fields:
       - { name: photo, label: "Author photo", type: image }
       - { name: name, label: "Name", type: string }
+      - { name: tagline, label: "Line under the name", type: string }
+      - name: facts
+        label: "Quick facts (short, shown as gold badges)"
+        type: object
+        list: true
+        fields:
+          - { name: text, label: "Fact", type: string }
       - { name: intro, label: "Intro", type: rich-text, options: { format: markdown } }
       - { name: quote, label: "Quote banner", type: text }
       - { name: storyEyebrow, label: "Story — small line", type: string }
@@ -123,6 +130,7 @@ content:
       - { name: secretLabel, label: "Secret Lands — small line", type: string }
       - { name: secretName, label: "Secret Lands — title", type: string }
       - { name: secretText, label: "Secret Lands — text", type: text }
+      - { name: secretImage, label: "Secret Lands — picture (the Owl)", type: image }
 
   - name: news
     label: News posts

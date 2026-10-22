@@ -22,16 +22,32 @@
 ---
 {% from "macros.njk" import pic %}
 <main>
-  <section>
+  <header class="ahero">
     <div class="wrap">
-      <div class="split">
-        <div class="media">{{ pic(author.photo, author.name, author.name, "square") }}</div>
-        <div class="prose">
-          <p class="eyebrow">The Author</p>
-          <h1 style="font-size:clamp(2rem,5vw,3.2rem);margin-bottom:1.2rem">{{ author.name }}</h1>
-          {{ author.intro | md | safe }}
-        </div>
+      <div class="aportrait">
+        {% if author.photo %}<img src="{{ author.photo | u }}" alt="{{ author.name }}">{% else %}<div class="ph square"><span class="plabel">{{ author.name }}</span></div>{% endif %}
+        <span class="agem" aria-hidden="true"></span>
       </div>
+      <p class="eyebrow">The Author</p>
+      <h1>{{ author.name }}</h1>
+      <div class="orn" aria-hidden="true">&#9670;&#9671;&#9670;</div>
+      {% if author.tagline %}<p class="atag">{{ author.tagline }}</p>{% endif %}
+      {% if author.facts and author.facts.length %}
+      <ul class="afacts">{% for f in author.facts %}<li><span aria-hidden="true">&#9670;</span>{{ f.text or f }}</li>{% endfor %}</ul>
+      {% endif %}
+      <div class="btnrow" style="justify-content:center;margin-top:1.6rem">
+        <a class="btn" href="{{ site.buyUrl }}" target="_blank" rel="noopener">Read Book I</a>
+        <a class="btn ghost" href="#story">His Story</a>
+      </div>
+      {% if site.socials.length %}
+      <nav class="asocial" aria-label="Follow {{ author.name }}">{% for s in site.socials %}<a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.label }}</a>{% endfor %}</nav>
+      {% endif %}
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap prose dropcap" style="max-width:68ch;margin-inline:auto">
+      {{ author.intro | md | safe }}
     </div>
   </section>
 
@@ -42,8 +58,8 @@
     </div>
   </section>
 
-  <section>
-    <div class="wrap prose" style="max-width:72ch;margin-inline:auto">
+  <section id="story">
+    <div class="wrap prose" style="max-width:68ch;margin-inline:auto">
       <p class="eyebrow">{{ author.storyEyebrow }}</p>
       <h2 style="margin-bottom:1rem">{{ author.storyHeading }}</h2>
       {{ author.story | md | safe }}

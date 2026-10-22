@@ -16,6 +16,7 @@
   </article>
   {% endfor %}
   <article class="kcard secret">
+    {% if k.secretImage %}<img class="kimg" src="{{ k.secretImage | u }}" alt="{{ k.secretName }}" loading="lazy">{% endif %}
     <div class="beast">{{ k.secretLabel }}</div>
     <h3>{{ k.secretName }}</h3>
     <div class="native">{{ k.secretText }}</div>
