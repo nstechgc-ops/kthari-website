@@ -63,6 +63,16 @@
     </div>
   </section>
 
+  <section class="seals center">
+    <div class="wrap">
+      <p class="eyebrow">{{ home.sealsEyebrow }}</p>
+      <h2>{{ home.sealsHeading }}</h2>
+      <div class="orn" aria-hidden="true">&#9670;&#9671;&#9670;</div>
+      <div class="lead">{{ home.sealsText | md | safe }}</div>
+      {% if home.sealsImage %}<figure class="sealsimg"><img src="{{ home.sealsImage | u }}" alt="The sacred seals of the seven kingdoms of K'Thari and the Owl" loading="lazy"></figure>{% endif %}
+    </div>
+  </section>
+
   <section id="kingdoms">
     <div class="wrap">
       <p class="eyebrow center">The Kingdoms of K'Thari</p>

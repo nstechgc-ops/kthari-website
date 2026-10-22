@@ -20,6 +20,10 @@ content:
       - { name: cosmologyEyebrow, label: "Cosmology — small line", type: string }
       - { name: cosmologyHeading, label: "Cosmology — heading", type: string }
       - { name: cosmologyText, label: "Cosmology — text", type: text }
+      - { name: sealsEyebrow, label: "Sacred Seals — small line", type: string }
+      - { name: sealsHeading, label: "Sacred Seals — heading", type: string }
+      - { name: sealsText, label: "Sacred Seals — text", type: rich-text, options: { format: markdown } }
+      - { name: sealsImage, label: "Sacred Seals — picture (the medallions)", type: image }
       - { name: kingdomsHeading, label: "Kingdoms section heading", type: string }
       - { name: bookEyebrow, label: "Book teaser — small line", type: string }
       - { name: bookHeading, label: "Book teaser — heading", type: string }

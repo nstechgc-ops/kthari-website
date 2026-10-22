@@ -1,7 +1,7 @@
 {# Shows the uploaded picture, or a gold placeholder until one is added #}
 {% macro pic(src, alt, label, shape='') %}
 {% if src %}<img class="cover pic {{ shape }}" src="{{ src | u }}" alt="{{ alt }}" loading="lazy">
-{% else %}<div class="ph {{ shape }}"><span class="plabel">{{ label }}</span><span class="pnote">Add an image in the editor</span></div>{% endif %}
+{% else %}<div class="ph {{ shape }}"><span class="plabel">{{ label }}</span></div>{% endif %}
 {% endmacro %}
 
 {% macro kingdomGrid(k, short=false) %}
