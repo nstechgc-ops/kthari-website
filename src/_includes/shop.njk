@@ -1,0 +1,28 @@
+{% set sh = site.shop %}
+<section class="shop" id="shop">
+  <div class="wrap">
+    <p class="eyebrow center">{{ sh.eyebrow }}</p>
+    <h2 class="center">{{ sh.heading }}</h2>
+    <div class="orn" aria-hidden="true">&#9670;&#9671;&#9670;</div>
+    {% if sh.intro %}<p class="lead center">{{ sh.intro }}</p>{% endif %}
+    <div class="shopgrid">
+      {% for pr in sh.products %}
+      <article class="pcard">
+        <a class="pimg" href="{{ pr.url }}" target="_blank" rel="noopener">
+          {% if pr.image %}<img src="{{ pr.image | u }}" alt="{{ pr.name }}" loading="lazy">
+          {% else %}<div class="ph"><span class="plabel">{{ pr.name }}</span></div>{% endif %}
+        </a>
+        <div class="pbody">
+          <p class="pformat">{{ pr.format }}</p>
+          <h3>{{ pr.name }}</h3>
+          <p class="pprice">{{ pr.price }}</p>
+          <ul class="ppoints">{% for pt in pr.points %}<li><span aria-hidden="true">&#9670;</span>{{ pt.text or pt }}</li>{% endfor %}</ul>
+          <a class="btn" href="{{ pr.url }}" target="_blank" rel="noopener">{{ pr.button }}</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    {% if site.direct.sampleUrl %}<p class="center" style="margin-top:2rem"><a class="btn ghost" href="{{ site.direct.sampleUrl }}" target="_blank" rel="noopener">{{ site.direct.sampleLabel }}</a></p>{% endif %}
+    <p class="shopnote center">Prefer a retailer? Blood of the Seven is also on <a href="{{ site.buyUrl }}" target="_blank" rel="noopener">Amazon, Apple Books, Kobo and more</a>.</p>
+  </div>
+</section>

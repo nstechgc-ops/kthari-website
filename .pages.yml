@@ -195,6 +195,25 @@ content:
     type: file
     path: src/_data/site.json
     fields:
+      - name: shop
+        label: "Shop section (Book page)"
+        type: object
+        fields:
+          - { name: eyebrow, label: "Small line", type: string }
+          - { name: heading, label: "Heading", type: string }
+          - { name: intro, label: "Intro", type: text }
+          - name: products
+            label: "Products"
+            type: object
+            list: true
+            fields:
+              - { name: image, label: "Cover", type: image }
+              - { name: name, label: "Name", type: string }
+              - { name: format, label: "Format line", type: string }
+              - { name: price, label: "Price (e.g. $6.99)", type: string }
+              - { name: points, label: "Bullet points", type: string, list: true }
+              - { name: button, label: "Button text", type: string }
+              - { name: url, label: "Payhip link", type: string }
       - name: direct
         label: "Buy Direct (Payhip) buttons"
         type: object

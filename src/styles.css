@@ -331,3 +331,20 @@ img.pic.square{max-width:300px;aspect-ratio:1/1;object-fit:cover}
   background:linear-gradient(180deg,rgba(201,162,39,.08),rgba(201,162,39,.02))}
 .direct .eyebrow{margin:0 0 .8rem}
 .directnote{font-family:var(--f-ui);font-size:.75rem;color:var(--muted);margin:.9rem 0 0!important;max-width:none}
+
+/* ---------- shop ---------- */
+.shop{background:radial-gradient(70% 60% at 50% 0%,rgba(201,162,39,.12),transparent 70%),var(--ink-2);border-block:1px solid var(--line-2)}
+.shopgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:22px;margin-top:2.4rem}
+.pcard{display:grid;grid-template-columns:160px 1fr;gap:22px;align-items:start;padding:22px;
+  background:linear-gradient(180deg,var(--card-2),var(--card));border:1px solid var(--line);border-radius:3px;box-shadow:var(--shadow)}
+@media(max-width:520px){.pcard{grid-template-columns:1fr}.pimg{max-width:220px;margin:0 auto}}
+.pimg img,.pimg .ph{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:2px;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.pimg .ph{padding:12px}.pimg .ph .plabel{font-size:.95rem}
+.pformat{font-family:var(--f-ui);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0}
+.pbody h3{font-size:1.15rem;margin:.4rem 0 .3rem;line-height:1.25}
+.pprice{font-family:var(--f-disp);font-size:1.7rem;color:var(--gold-br);margin:.2rem 0 .6rem}
+.ppoints{list-style:none;padding:0;margin:0 0 1.2rem;font-size:.98rem;color:var(--muted)}
+.ppoints li{display:flex;gap:.6em;margin:.35em 0;line-height:1.4}
+.ppoints li span{color:var(--gold);font-size:.55rem;margin-top:.55em}
+.shopnote{font-family:var(--f-ui);font-size:.8rem;color:var(--muted);margin-top:1.4rem}
+.shopnote a{border-bottom:1px solid var(--line)}
