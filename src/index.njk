@@ -44,6 +44,8 @@
 </header>
 
 <main>
+{% include "shop.njk" %}
+
   {% set yt = home.trailerUrl | youtubeId %}
   {% if yt %}
   <section class="center">
@@ -55,17 +57,6 @@
   </section>
   {% endif %}
 
-  {% if home.bannersImage %}
-  <section class="banners center">
-    <div class="wrap">
-      <p class="eyebrow">{{ home.bannersEyebrow }}</p>
-      <h2>{{ home.bannersHeading }}</h2>
-      <div class="orn" aria-hidden="true">&#9670;&#9671;&#9670;</div>
-      {% if home.bannersText %}<p class="lead">{{ home.bannersText }}</p>{% endif %}
-      <figure class="bannersimg"><img src="{{ home.bannersImage | u }}" alt="The banners of the seven kingdoms of K'Thari and the Owl" loading="lazy"></figure>
-    </div>
-  </section>
-  {% endif %}
 
   <section class="center">
     <div class="wrap">
@@ -111,8 +102,6 @@
     </div>
   </section>
 
-{% include "shop.njk" %}
-
   <section>
     <div class="wrap">
       <div class="split rev">
@@ -136,6 +125,18 @@
         {% for post in collections.news | head(3) %}{% include "newscard.njk" %}{% endfor %}
       </div>
       <div class="btnrow center" style="margin-top:2rem;justify-content:center"><a class="btn ghost" href="/news">All News</a></div>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if home.bannersImage %}
+  <section class="banners banners-sm center">
+    <div class="wrap">
+      <p class="eyebrow">{{ home.bannersEyebrow }}</p>
+      <h2>{{ home.bannersHeading }}</h2>
+      <div class="orn" aria-hidden="true">&#9670;&#9671;&#9670;</div>
+      {% if home.bannersText %}<p class="lead">{{ home.bannersText }}</p>{% endif %}
+      <figure class="bannersimg"><img src="{{ home.bannersImage | u }}" alt="The banners of the seven kingdoms of K'Thari and the Owl" loading="lazy"></figure>
     </div>
   </section>
   {% endif %}

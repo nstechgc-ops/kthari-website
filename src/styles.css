@@ -354,3 +354,7 @@ img.pic.square{max-width:300px;aspect-ratio:1/1;object-fit:cover}
 .bannersimg{margin:2.2rem auto 0;max-width:1100px;padding:8px;border:1px solid var(--line);
   background:linear-gradient(180deg,var(--card-2),var(--ink));box-shadow:var(--shadow)}
 .bannersimg img{width:100%;height:auto}
+.banners-sm{padding-block:clamp(36px,6vw,64px)}
+.banners-sm h2{font-size:clamp(1.25rem,3vw,1.7rem)}
+.banners-sm .lead{font-size:1.02rem}
+.banners-sm .bannersimg{max-width:640px;margin-top:1.4rem;padding:6px}
