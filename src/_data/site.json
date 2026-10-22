@@ -27,5 +27,15 @@
       "label": "Goodreads",
       "url": "https://www.goodreads.com/author/show/70293174.Njintieuh_Sieni"
     }
-  ]
+  ],
+  "direct": {
+    "heading": "Buy Direct from the Author",
+    "note": "Support the author directly. Instant download, readable on Kindle, Apple Books, Kobo and more.",
+    "ebookLabel": "eBook — $6.99",
+    "ebookUrl": "https://payhip.com/b/iuozW",
+    "printLabel": "Signed Illustrated Edition",
+    "printUrl": "",
+    "sampleLabel": "Read a Free Sample",
+    "sampleUrl": "/files/KThari_BookI_FREE_SAMPLE.pdf"
+  }
 }

@@ -33,7 +33,9 @@
           <h1 style="font-size:clamp(2rem,5vw,3.2rem)">{{ book.title }}</h1>
           <p class="tag" style="color:var(--muted);font-style:italic;font-size:1.2rem;margin:.4em 0 1.4rem">{{ book.tagline }}</p>
           {{ book.synopsis | md | safe }}
-          <div class="buys">
+          {% include "direct.njk" %}
+          <p class="eyebrow" style="margin-top:1.6rem">Also available at</p>
+          <div class="buys" style="margin-top:.6rem">
             {% for r in book.retailers %}<a href="{{ r.url }}" target="_blank" rel="noopener">{{ r.label }}</a>{% endfor %}
           </div>
           <dl class="meta">

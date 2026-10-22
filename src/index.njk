@@ -89,8 +89,9 @@
           <p class="eyebrow">{{ home.bookEyebrow }}</p>
           <h2>{{ home.bookHeading }}</h2>
           {{ home.bookText | md | safe }}
-          <div class="btnrow">
-            <a class="btn" href="{{ site.buyUrl }}" target="_blank" rel="noopener">Get the Book</a>
+          {% include "direct.njk" %}
+          <div class="btnrow" style="margin-top:1rem">
+            <a class="btn ghost" href="{{ site.buyUrl }}" target="_blank" rel="noopener">All Retailers</a>
             <a class="btn ghost" href="/book">Full Synopsis</a>
           </div>
         </div>

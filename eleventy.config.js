@@ -4,7 +4,7 @@ const md = markdownIt({ html: false, breaks: false, linkify: true, typographer: 
 
 export default function (eleventyConfig) {
   // Copy static files straight through
-  ["src/images", "src/styles.css", "src/favicon.svg", "src/robots.txt", "src/_headers"].forEach((p) =>
+  ["src/images", "src/files", "src/styles.css", "src/favicon.svg", "src/robots.txt", "src/_headers"].forEach((p) =>
     eleventyConfig.addPassthroughCopy(p)
   );
 

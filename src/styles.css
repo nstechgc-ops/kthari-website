@@ -325,3 +325,9 @@ img.pic.square{max-width:300px;aspect-ratio:1/1;object-fit:cover}
 .ckingdom{font-family:var(--f-ui);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:.6rem 0 0}
 .cmimg{max-height:420px;object-position:center 20%}
 .kclose + .kmbody{padding-top:60px}
+
+/* ---------- buy direct ---------- */
+.direct{margin-top:1.8rem;padding:18px 20px;border:1px solid var(--line);border-radius:3px;
+  background:linear-gradient(180deg,rgba(201,162,39,.08),rgba(201,162,39,.02))}
+.direct .eyebrow{margin:0 0 .8rem}
+.directnote{font-family:var(--f-ui);font-size:.75rem;color:var(--muted);margin:.9rem 0 0!important;max-width:none}

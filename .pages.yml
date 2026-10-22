@@ -195,6 +195,18 @@ content:
     type: file
     path: src/_data/site.json
     fields:
+      - name: direct
+        label: "Buy Direct (Payhip) buttons"
+        type: object
+        fields:
+          - { name: heading, label: "Heading", type: string }
+          - { name: ebookLabel, label: "eBook button text", type: string }
+          - { name: ebookUrl, label: "eBook Payhip link", type: string }
+          - { name: printLabel, label: "Signed edition button text", type: string }
+          - { name: printUrl, label: "Signed edition Payhip link (leave empty to hide)", type: string }
+          - { name: sampleLabel, label: "Sample button text", type: string }
+          - { name: sampleUrl, label: "Sample file", type: file }
+          - { name: note, label: "Small note under the buttons", type: string }
       - { name: buyUrl, label: "Main 'Buy / Read' link (used on every button)", type: string }
       - { name: followUrl, label: "'Follow the Author' link", type: string }
       - { name: navButton, label: "Top-right button text", type: string }

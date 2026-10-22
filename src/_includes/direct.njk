@@ -1,0 +1,10 @@
+{% set dr = site.direct %}
+<div class="direct">
+  <p class="eyebrow">{{ dr.heading }}</p>
+  <div class="btnrow">
+    {% if dr.ebookUrl %}<a class="btn" href="{{ dr.ebookUrl }}" target="_blank" rel="noopener">{{ dr.ebookLabel }}</a>{% endif %}
+    {% if dr.printUrl %}<a class="btn" href="{{ dr.printUrl }}" target="_blank" rel="noopener">{{ dr.printLabel }}</a>{% endif %}
+    {% if dr.sampleUrl %}<a class="btn ghost" href="{{ dr.sampleUrl }}" target="_blank" rel="noopener">{{ dr.sampleLabel }}</a>{% endif %}
+  </div>
+  {% if dr.note %}<p class="directnote">{{ dr.note }}</p>{% endif %}
+</div>
