@@ -7,6 +7,9 @@
   "navButton": "Read Book I",
   "shareImage": "",
   "socials": [
-    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/njintieuh-sieni-b12b53377" }
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/njintieuh-sieni-3a236199/"
+    }
   ]
 }
