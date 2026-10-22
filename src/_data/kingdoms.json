@@ -1,57 +1,83 @@
 {
   "kingdoms": [
     {
+      "numeral": "I",
       "beast": "The Lion Kingdom",
       "name": "Kingdom of the Sun",
       "native": "Ūsángà wà Kofári",
       "traits": "Sun · Law · Conquest · Rule",
+      "motto": "Where authority is sacred, and crowns are heavy.",
+      "description": "The Lion Kingdom is the seat of imperial unity. Kings are not chosen to be loved, but to carry the burden of rule. Justice is public. Power is visible. Failure is remembered.",
       "image": "/images/Emblem - Lion.jpg"
     },
     {
+      "numeral": "II",
       "beast": "The Elephant Kingdom",
       "name": "The Land That Remembers",
       "native": "Nàyámbé-Tárà",
       "traits": "Memory · Endurance · Ancestral Law",
+      "motto": "Where history is alive.",
+      "description": "Elephant elders carry the living memory of K'Thari. Their rulings are slow, deliberate, and almost never wrong. The past is not past here. It is law.",
       "image": "/images/Emblem - Elephant.jpg"
     },
     {
+      "numeral": "III",
       "beast": "The Crocodile Kingdom",
       "name": "The Waiting Waters",
       "native": "Mákòndaré",
-      "traits": "Rivers · Patience · Stillness",
+      "traits": "Rivers · Patience · Death · Stillness",
+      "motto": "Where nothing moves without purpose.",
+      "description": "The Crocodile Kingdom rules the great waterways and hidden deltas. Their power is not speed, but inevitability. What enters their domain is already being judged.",
       "image": "/images/Emblem - Crocodile.jpg"
     },
     {
+      "numeral": "IV",
       "beast": "The Leopard Kingdom",
       "name": "The Hidden Crown",
       "native": "Sényà-Nórù",
       "traits": "Stealth · Intelligence · Precision",
+      "motto": "Where unseen power decides everything.",
+      "description": "The Leopard Kingdom does not march armies — it moves individuals. Assassins. Scouts. Tacticians. Infiltrators. They are the invisible hand of K'Thari.",
       "image": "/images/Emblem - Leopard.jpg"
     },
     {
+      "numeral": "V",
       "beast": "The Gorilla Kingdom",
       "name": "The Unbroken Heights",
       "native": "Mbárù-Kéntà",
-      "traits": "Strength · Discipline · Restraint",
+      "traits": "Strength · Discipline · Spiritual Restraint",
+      "motto": "Where power is mastered, not displayed.",
+      "description": "The Gorilla Kingdom believes true strength is control. Warriors train in silence. Kings rule through restraint. Their mountains produce soldiers who do not break.",
       "image": "/images/Emblem - Gorilla.jpg"
     },
     {
+      "numeral": "VI",
       "beast": "The Serpent Kingdom",
       "name": "The Coiled Dominion",
       "native": "Bákungà",
       "traits": "Secrets · Manipulation · Silent Power",
+      "motto": "Where truth is a weapon.",
+      "description": "The Serpent Kingdom does not rule land — it rules information. Spies, whispers, contracts, poisons, betrayals. They rarely fight wars. They end them before they begin.",
       "image": "/images/Emblem - Serpent.jpg"
     },
     {
+      "numeral": "VII",
       "beast": "The Hyena Kingdom",
       "name": "The Devouring Lands",
       "native": "Zákhàrà-Vé",
       "traits": "Hunger · Corruption · War",
+      "motto": "Where survival has rotted into cruelty.",
+      "description": "The Hyena territories are what remain when desperation becomes culture. They raid. They scavenge. They conquer because they must. They are not evil. They are starving.",
       "image": "/images/Emblem - Hyena.jpg"
     }
   ],
   "secretLabel": "Not a Kingdom",
   "secretName": "K'Thari-Úmbrà — The Secret Lands",
   "secretText": "That which belongs to all. And the Owl watches over every crown.",
-  "secretImage": "/images/Emblem - Owl.jpg"
+  "secretImage": "/images/Emblem - Owl.jpg",
+  "secretNumeral": "VIII",
+  "secretTraits": "Balance · Prophecy · Ancient Law · Symbol: The Owl",
+  "secretMotto": "It has no throne. No army. No borders.",
+  "secretDescription": "This is not a kingdom. It is the spiritual and mythic heart of the continent. The Owl does not rule. It watches.",
+  "secretTitle": "The Secret Lands — That Which Belongs to All"
 }

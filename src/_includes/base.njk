@@ -71,5 +71,13 @@ b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')==='t
 m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.hidden=true;b.setAttribute('aria-expanded','false');}});})();
 </script>
 {% endif %}
+<script>
+document.addEventListener('click',function(e){
+  var o=e.target.closest('[data-open]');
+  if(o){var d=document.getElementById(o.getAttribute('data-open'));if(d&&d.showModal){d.showModal();}return;}
+  if(e.target.closest('.kclose')){e.target.closest('dialog').close();return;}
+  if(e.target.tagName==='DIALOG'){e.target.close();}
+});
+</script>
 </body>
 </html>

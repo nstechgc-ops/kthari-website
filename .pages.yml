@@ -133,14 +133,22 @@ content:
         type: object
         list: true
         fields:
+          - { name: numeral, label: "Number (I, II, III…)", type: string }
           - { name: beast, label: "Kingdom (e.g. The Lion Kingdom)", type: string }
           - { name: name, label: "Title", type: string }
           - { name: native, label: "Native name", type: string }
           - { name: traits, label: "Traits", type: string }
+          - { name: motto, label: "Motto (pop-up)", type: string }
+          - { name: description, label: "Description (pop-up)", type: text }
           - { name: image, label: "Picture (optional)", type: image }
       - { name: secretLabel, label: "Secret Lands — small line", type: string }
       - { name: secretName, label: "Secret Lands — title", type: string }
       - { name: secretText, label: "Secret Lands — text", type: text }
+      - { name: secretNumeral, label: "Secret Lands — number", type: string }
+      - { name: secretTitle, label: "Secret Lands — pop-up title", type: string }
+      - { name: secretTraits, label: "Secret Lands — traits", type: string }
+      - { name: secretMotto, label: "Secret Lands — motto (pop-up)", type: string }
+      - { name: secretDescription, label: "Secret Lands — description (pop-up)", type: text }
       - { name: secretImage, label: "Secret Lands — picture (the Owl)", type: image }
 
   - name: news

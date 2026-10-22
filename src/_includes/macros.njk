@@ -4,22 +4,46 @@
 {% else %}<div class="ph {{ shape }}"><span class="plabel">{{ label }}</span></div>{% endif %}
 {% endmacro %}
 
+{% macro kdialog(id, img, numeral, label, native, title, traits, motto, desc) %}
+<dialog class="kmodal" id="{{ id }}" aria-labelledby="{{ id }}-h">
+  <button class="kclose" type="button" aria-label="Close">&times;</button>
+  {% if img %}<img class="kmimg" src="{{ img | u }}" alt="{{ label }}" loading="lazy">{% endif %}
+  <div class="kmbody">
+    <p class="eyebrow">{% if numeral %}{{ numeral }} &middot; {% endif %}{{ label }}</p>
+    <h3 id="{{ id }}-h">{{ native }}</h3>
+    {% if title %}<p class="kmtitle">{{ title }}</p>{% endif %}
+    {% if traits %}<p class="kmtraits">{{ traits }}</p>{% endif %}
+    <div class="orn" aria-hidden="true">&#9670;&#9671;&#9670;</div>
+    {% if motto %}<p class="kmmotto">{{ motto }}</p>{% endif %}
+    {% if desc %}<div class="kmdesc">{{ desc | md | safe }}</div>{% endif %}
+    <p class="kmnote">Summarised reference. Full histories unfold within the narrative.</p>
+  </div>
+</dialog>
+{% endmacro %}
+
 {% macro kingdomGrid(k, short=false) %}
 <div class="kgrid">
   {% for x in k.kingdoms %}
+  {% set kid = "k-" ~ loop.index %}
   <article class="kcard">
+    <button class="kopen" type="button" data-open="{{ kid }}" aria-label="Read about {{ x.beast }}"></button>
     {% if x.image %}<img class="kimg" src="{{ x.image | u }}" alt="{{ x.beast }}" loading="lazy">{% endif %}
     <div class="beast">{{ x.beast }}</div>
     <h3>{{ x.name }}</h3>
     <div class="native">{{ x.native }}</div>
     {% if x.traits %}<div class="traits">{{ x.traits }}</div>{% endif %}
+    <div class="kmore">Read more &rsaquo;</div>
   </article>
+  {{ kdialog(kid, x.image, x.numeral, x.beast, x.native, "“" ~ x.name ~ "”", x.traits, x.motto, x.description) }}
   {% endfor %}
   <article class="kcard secret">
+    <button class="kopen" type="button" data-open="k-secret" aria-label="Read about the Secret Lands"></button>
     {% if k.secretImage %}<img class="kimg" src="{{ k.secretImage | u }}" alt="{{ k.secretName }}" loading="lazy">{% endif %}
     <div class="beast">{{ k.secretLabel }}</div>
     <h3>{{ k.secretName }}</h3>
     <div class="native">{{ k.secretText }}</div>
+    <div class="kmore">Read more &rsaquo;</div>
   </article>
+  {{ kdialog("k-secret", k.secretImage, k.secretNumeral, k.secretLabel, "K'Thari-Úmbrà", k.secretTitle, k.secretTraits, k.secretMotto, k.secretDescription) }}
 </div>
 {% endmacro %}
