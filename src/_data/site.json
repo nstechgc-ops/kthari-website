@@ -5,7 +5,7 @@
   "buyUrl": "https://books2read.com/bloodoftheseven",
   "followUrl": "https://books2read.com/kthari",
   "navButton": "Read Book I",
-  "shareImage": "",
+  "shareImage": "/images/og-cover.jpg",
   "socials": [
     {
       "label": "Facebook",
@@ -47,7 +47,7 @@
         "name": "Blood of the Seven — eBook",
         "format": "Instant download · EPUB",
         "price": "$6.99",
-        "image": "/images/Book 1_EbookCover1.jpg",
+        "image": "/images/cover-book1.jpg",
         "points": [
           "Reads on Kindle, Apple Books, Kobo, Google Play Books and more",
           "Delivered instantly by email",
@@ -60,7 +60,7 @@
         "name": "Blood of the Seven — Signed Illustrated Edition",
         "format": "Full-colour paperback · 8.5 × 11 in · 564 pages",
         "price": "$79.99",
-        "image": "",
+        "image": "/images/cover-book1.jpg",
         "points": [
           "Personally signed by Njintieuh Sieni",
           "Optional dedication — add a name in the order notes",
