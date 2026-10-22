@@ -83,6 +83,7 @@
     {
       "group": "The Lion Kingdom",
       "name": "General Sàhira Nombé",
+      "image": "/images/Warrior at sunset with golden armorPage_2-high fidelity v3-2x.jpg",
       "title": "Commander of the Sun Veil",
       "kingdom": "Ūsángà wà Kofári — The Lion Kingdom",
       "knownFor": "Leading the order of disciplined women bonded to war lionesses.",
@@ -92,6 +93,7 @@
     {
       "group": "The Elephant Kingdom",
       "name": "Queen Nàyámbé",
+      "image": "/images/Queen NayambePage_2-high fidelity v3-2x.jpg",
       "title": "Nàyámbé the Keeper of Memory",
       "kingdom": "Nàyámbé-Tárà — The Elephant Kingdom",
       "knownFor": "Guarding the memory of the Seven — including an account the empire would rather was forgotten.",
@@ -101,6 +103,7 @@
     {
       "group": "The Elephant Kingdom",
       "name": "Prince Támari",
+      "image": "/images/Prince TamariPage_2-high fidelity v3-2x.jpg",
       "title": "Támari the Remembering Prince",
       "kingdom": "Nàyámbé-Tárà — The Elephant Kingdom",
       "knownFor": "Preserving the living history of K'Thari.",
@@ -119,6 +122,7 @@
     {
       "group": "The Leopard Kingdom",
       "name": "Queen Ìlayé",
+      "image": "/images/Queen SenyaraPage_2-high fidelity v3-2x.jpg",
       "title": "Ìlayé the Hidden Crown",
       "kingdom": "Sényà-Nórù — The Leopard Kingdom",
       "knownFor": "Mastering silent power.",
@@ -146,6 +150,7 @@
     {
       "group": "The Gorilla Kingdom",
       "name": "Prince Thúramba",
+      "image": "/images/Dákoru and the armored gorillasPage_2-high fidelity v3-2x.jpg",
       "title": "Thúramba the Ironback Prince",
       "kingdom": "Mbárù-Kéntà — The Gorilla Kingdom",
       "knownFor": "Commanding the Ironbacks.",
@@ -155,6 +160,7 @@
     {
       "group": "The Serpent Kingdom",
       "name": "Queen Selin",
+      "image": "/images/Queen SelinPage_2-high fidelity v3-2x.jpg",
       "title": "The Serpent Queen",
       "kingdom": "Bákungà — The Serpent Kingdom",
       "knownFor": "Ruling through information and traded truth.",
@@ -173,6 +179,7 @@
     {
       "group": "The Hyena Territories",
       "name": "Zákhara Daro",
+      "image": "/images/Zákhara Daro and his hyenaPage_2-high fidelity v3-2x.jpg",
       "title": "The Bone Strategist",
       "kingdom": "Zákhàrà-Vé — The Hyena Territories",
       "knownFor": "War Advisor of the Devouring Lands.",
@@ -182,6 +189,7 @@
     {
       "group": "Beyond the Seven",
       "name": "Prince Zahír al-Kharim",
+      "image": "/images/Prince ZahirPage_2-high fidelity v3-2625w.jpg",
       "title": "Zahír of the Endless Horizon",
       "kingdom": "The Desert Kingdom — beyond K'Thari",
       "knownFor": "Heir of Al-Kharim — balancing the desert against the politics of the Seven.",
@@ -191,6 +199,7 @@
     {
       "group": "Beyond the Seven",
       "name": "The Oracle",
+      "image": "/images/The OraclePage_2-high fidelity v3-2x.jpg",
       "title": "The Voice Beneath the Stars",
       "kingdom": "K'Thari-Úmbrà — The Secret Land",
       "knownFor": "Speaking the prophecy that opened the age.",
