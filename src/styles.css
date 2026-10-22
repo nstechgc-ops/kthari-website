@@ -306,3 +306,22 @@ img.pic.square{max-width:300px;aspect-ratio:1/1;object-fit:cover}
 .kmdesc{text-align:left;max-width:52ch;margin:0 auto}
 .kmdesc p{margin:0 0 1em}
 .kmnote{font-family:var(--f-ui);font-size:.7rem;letter-spacing:.06em;color:var(--muted-2);margin:1.4rem 0 0}
+
+/* ---------- characters ---------- */
+.cgroup{display:flex;align-items:center;gap:16px;font-size:clamp(1.1rem,3vw,1.5rem);margin:3rem 0 1.4rem;color:var(--gold-br)}
+.cgroup::before,.cgroup::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--line))}
+.cgroup::after{background:linear-gradient(90deg,var(--line),transparent)}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
+@media(max-width:480px){.cgrid{grid-template-columns:1fr 1fr;gap:12px}}
+.ccard{position:relative;background:linear-gradient(180deg,var(--card-2),var(--card));border:1px solid var(--line-2);
+  border-radius:3px;overflow:hidden;transition:.2s;cursor:pointer}
+.ccard:hover{border-color:var(--line);transform:translateY(-2px);box-shadow:var(--shadow)}
+.cimg{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 20%;display:block}
+.cimg.ph{border:0;border-bottom:1px solid var(--line-2);box-shadow:none;padding:12px}
+.cimg.ph .plabel{font-size:1rem}
+.cbody{padding:14px 14px 16px}
+.cbody h3{font-size:1rem;margin:0 0 .3rem}
+.ctitle{font-style:italic;color:var(--muted);font-size:.92rem;margin:0;line-height:1.35}
+.ckingdom{font-family:var(--f-ui);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:.6rem 0 0}
+.cmimg{max-height:420px;object-position:center 20%}
+.kclose + .kmbody{padding-top:60px}

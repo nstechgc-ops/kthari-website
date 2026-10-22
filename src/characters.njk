@@ -1,0 +1,70 @@
+---js
+{
+  layout: "base.njk",
+  permalink: "/characters.html",
+  nav: "characters",
+  eleventyComputed: {
+    seoTitle: (d) => d.characters.seoTitle,
+    seoDescription: (d) => d.characters.seoDescription,
+    shareImage: (d) => (d.characters.characters.find((c) => c.image) || {}).image || d.site.shareImage
+  }
+}
+---
+<main>
+  <section class="center" style="padding-bottom:0">
+    <div class="wrap">
+      <p class="eyebrow">{{ characters.eyebrow }}</p>
+      <h1 style="font-size:clamp(2rem,5vw,3.2rem)">{{ characters.heading }}</h1>
+      <div class="orn" aria-hidden="true">&#9670;&#9671;&#9670;</div>
+      <p class="lead">{{ characters.intro }}</p>
+    </div>
+  </section>
+  <section style="padding-top:1.5rem">
+    <div class="wrap">
+      {% set ns = { g: "" } %}
+      {% for c in characters.characters %}
+        {% if c.group != ns.g %}
+          {% if not loop.first %}</div>{% endif %}
+          <h2 class="cgroup"><span>{{ c.group }}</span></h2>
+          <div class="cgrid">
+          {% set ns = { g: c.group } %}
+        {% endif %}
+        {% set cid = "c-" ~ loop.index %}
+        <article class="ccard">
+          <button class="kopen" type="button" data-open="{{ cid }}" aria-label="Read about {{ c.name }}"></button>
+          {% if c.image %}<img class="cimg" src="{{ c.image | u }}" alt="{{ c.name }}" loading="lazy">
+          {% else %}<div class="cimg ph"><span class="plabel">{{ c.name }}</span></div>{% endif %}
+          <div class="cbody">
+            <h3>{{ c.name }}</h3>
+            <p class="ctitle">{{ c.title }}</p>
+            <p class="ckingdom">{{ c.kingdom }}</p>
+          </div>
+        </article>
+        <dialog class="kmodal" id="{{ cid }}" aria-labelledby="{{ cid }}-h">
+          <button class="kclose" type="button" aria-label="Close">&times;</button>
+          {% if c.image %}<img class="kmimg cmimg" src="{{ c.image | u }}" alt="{{ c.name }}" loading="lazy">{% endif %}
+          <div class="kmbody">
+            <p class="eyebrow">{{ c.kingdom }}</p>
+            <h3 id="{{ cid }}-h">{{ c.name }}</h3>
+            <p class="kmtitle">{{ c.title }}</p>
+            <div class="orn" aria-hidden="true">&#9670;&#9671;&#9670;</div>
+            {% if c.knownFor %}<p class="kmtraits" style="text-transform:none;letter-spacing:.02em;font-size:.85rem"><b>Known for:</b> {{ c.knownFor }}</p>{% endif %}
+            <div class="kmdesc" style="margin-top:1.2rem">{{ c.bio | md | safe }}</div>
+            {% if c.quote %}<p class="kmmotto" style="margin-top:1.2rem">“{{ c.quote }}”</p>{% endif %}
+          </div>
+        </dialog>
+        {% if loop.last %}</div>{% endif %}
+      {% endfor %}
+    </div>
+  </section>
+  <section class="band center">
+    <div class="wrap">
+      <h2>Meet them on the page</h2>
+      <p class="lead center">Their stories unfold in Blood of the Seven.</p>
+      <div class="btnrow center" style="margin-top:1.4rem;justify-content:center">
+        <a class="btn" href="{{ site.buyUrl }}" target="_blank" rel="noopener">Read Book I</a>
+        <a class="btn ghost" href="/book">The Book</a>
+      </div>
+    </div>
+  </section>
+</main>

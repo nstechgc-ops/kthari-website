@@ -123,6 +123,30 @@ content:
       - { name: seoTitle, label: "Google title (SEO)", type: string }
       - { name: seoDescription, label: "Google description (SEO)", type: text }
 
+  - name: characters
+    label: Characters
+    type: file
+    path: src/_data/characters.json
+    fields:
+      - { name: eyebrow, label: "Small line above the title", type: string }
+      - { name: heading, label: "Heading", type: string }
+      - { name: intro, label: "Intro text", type: text }
+      - name: characters
+        label: "Characters (in display order)"
+        type: object
+        list: true
+        fields:
+          - { name: group, label: "Group heading (e.g. The Lion Kingdom)", type: string }
+          - { name: name, label: "Name", type: string }
+          - { name: image, label: "Portrait", type: image }
+          - { name: title, label: "Title", type: string }
+          - { name: kingdom, label: "Kingdom", type: string }
+          - { name: knownFor, label: "Known for", type: text }
+          - { name: bio, label: "Intro (pop-up)", type: text }
+          - { name: quote, label: "Quote", type: string }
+      - { name: seoTitle, label: "Google title (SEO)", type: string }
+      - { name: seoDescription, label: "Google description (SEO)", type: text }
+
   - name: kingdoms
     label: The Seven Kingdoms
     type: file

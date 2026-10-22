@@ -33,6 +33,7 @@
     <div class="navlinks">
       <a href="/book" class="hide-sm"{% if nav == 'book' %} aria-current="page"{% endif %}>The Book</a>
       <a href="/author" class="hide-sm"{% if nav == 'author' %} aria-current="page"{% endif %}>The Author</a>
+      <a href="/characters" class="hide-sm"{% if nav == 'characters' %} aria-current="page"{% endif %}>Characters</a>
       <a href="/gallery" class="hide-sm"{% if nav == 'gallery' %} aria-current="page"{% endif %}>Gallery</a>
       {% if collections.news.length %}<a href="/news" class="hide-sm"{% if nav == 'news' %} aria-current="page"{% endif %}>News</a>{% endif %}
       <a class="btn" href="{{ site.buyUrl }}" target="_blank" rel="noopener">{{ site.navButton }}</a>
@@ -43,6 +44,7 @@
     <a href="/"{% if nav == 'home' %} aria-current="page"{% endif %}>Home</a>
     <a href="/book"{% if nav == 'book' %} aria-current="page"{% endif %}>The Book</a>
     <a href="/author"{% if nav == 'author' %} aria-current="page"{% endif %}>The Author</a>
+    <a href="/characters"{% if nav == 'characters' %} aria-current="page"{% endif %}>Characters</a>
     <a href="/gallery"{% if nav == 'gallery' %} aria-current="page"{% endif %}>Gallery</a>
     {% if collections.news.length %}<a href="/news"{% if nav == 'news' %} aria-current="page"{% endif %}>News</a>{% endif %}
     <a href="/book#kingdoms">The Seven Kingdoms</a>
@@ -58,6 +60,7 @@
       <a href="/">Home</a>
       <a href="/book">The Book</a>
       <a href="/author">The Author</a>
+      <a href="/characters">Characters</a>
       <a href="/gallery">Gallery</a>
       <a href="{{ site.buyUrl }}" target="_blank" rel="noopener">Buy</a>
       {% for s in site.socials %}<a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.label }}</a>{% endfor %}
