@@ -17,6 +17,10 @@ content:
       - { name: heroButton, label: "Main button text", type: string }
       - { name: trailerUrl, label: "Trailer — YouTube link (leave empty to hide)", type: string }
       - { name: trailerHeading, label: "Trailer heading", type: string }
+      - { name: bannersImage, label: "Banners — picture", type: image }
+      - { name: bannersEyebrow, label: "Banners — small line", type: string }
+      - { name: bannersHeading, label: "Banners — heading", type: string }
+      - { name: bannersText, label: "Banners — text", type: text }
       - { name: cosmologyEyebrow, label: "Cosmology — small line", type: string }
       - { name: cosmologyHeading, label: "Cosmology — heading", type: string }
       - { name: cosmologyText, label: "Cosmology — text", type: text }

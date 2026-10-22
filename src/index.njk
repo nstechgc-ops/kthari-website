@@ -55,6 +55,18 @@
   </section>
   {% endif %}
 
+  {% if home.bannersImage %}
+  <section class="banners center">
+    <div class="wrap">
+      <p class="eyebrow">{{ home.bannersEyebrow }}</p>
+      <h2>{{ home.bannersHeading }}</h2>
+      <div class="orn" aria-hidden="true">&#9670;&#9671;&#9670;</div>
+      {% if home.bannersText %}<p class="lead">{{ home.bannersText }}</p>{% endif %}
+      <figure class="bannersimg"><img src="{{ home.bannersImage | u }}" alt="The banners of the seven kingdoms of K'Thari and the Owl" loading="lazy"></figure>
+    </div>
+  </section>
+  {% endif %}
+
   <section class="center">
     <div class="wrap">
       <p class="eyebrow">{{ home.cosmologyEyebrow }}</p>
