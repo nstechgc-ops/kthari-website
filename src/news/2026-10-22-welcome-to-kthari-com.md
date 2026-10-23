@@ -1,8 +1,9 @@
 ---
-title: "Welcome to kthari.com — the official home of the saga"
+title: Welcome to kthari.com — the official home of the saga
 date: 2026-10-22
-summary: "Explore the seven kingdoms, meet the characters of Book I, and see the sacred seals — all in one place."
-image: "/images/banners-of-the-seven.jpg"
+summary: Explore the seven kingdoms, meet the characters of Book I, and see the
+  sacred seals — all in one place.
+image: /images/7KingdomArt+-2.jpg
 ---
 The world of K'Thari finally has a home of its own.
 
