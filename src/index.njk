@@ -3,7 +3,6 @@
   layout: "base.njk",
   permalink: "/index.html",
   nav: "home",
-  signupInline: true,
   ogType: "book",
   eleventyComputed: {
     seoTitle: (d) => d.home.seoTitle,
@@ -45,7 +44,6 @@
 </header>
 
 <main>
-{% include "signup.njk" %}
 {% include "shop.njk" %}
 
   {% set yt = home.trailerUrl | youtubeId %}
