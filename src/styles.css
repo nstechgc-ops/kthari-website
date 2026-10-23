@@ -368,3 +368,7 @@ img.pic.square{max-width:300px;aspect-ratio:1/1;object-fit:cover}
 .rvcard blockquote{margin:.6rem 0;font-style:italic}
 .rvcard figcaption{font-family:var(--f-ui);font-size:.75rem;color:var(--muted)}
 .ncard img{object-position:center 30%}
+
+/* MailerLite signup */
+.signup{padding-block:clamp(32px,5vw,56px);border-block:1px solid var(--line-2)}
+.signup .ml-embedded{max-width:560px;margin-inline:auto;min-height:120px}

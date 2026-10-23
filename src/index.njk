@@ -3,6 +3,7 @@
   layout: "base.njk",
   permalink: "/index.html",
   nav: "home",
+  signupInline: true,
   ogType: "book",
   eleventyComputed: {
     seoTitle: (d) => d.home.seoTitle,
@@ -44,6 +45,7 @@
 </header>
 
 <main>
+{% include "signup.njk" %}
 {% include "shop.njk" %}
 
   {% set yt = home.trailerUrl | youtubeId %}
@@ -148,7 +150,7 @@
       <p class="lead center" style="margin-top:1.4rem">{{ home.ctaText }}</p>
       <div class="btnrow center" style="margin-top:1.4rem;justify-content:center">
         <a class="btn" href="{{ site.buyUrl }}" target="_blank" rel="noopener">{{ home.ctaButton }}</a>
-        <a class="btn ghost" href="{{ site.followUrl }}" target="_blank" rel="noopener">Follow the Author</a>
+        <a class="btn ghost" href="#signup">Get Book II News</a>
       </div>
     </div>
   </section>
