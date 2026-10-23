@@ -1,8 +1,9 @@
 ---
-title: "Buy direct from the author — and read the first four chapters free"
+title: Buy direct from the author — and read the first four chapters free
 date: 2026-10-22
-summary: "The eBook and a signed Illustrated Edition are now available directly from the author, plus a free sample."
-image: "/images/cover-illustrated.jpg"
+summary: The eBook and a signed Illustrated Edition are now available directly
+  from the author, plus a free sample.
+image: /images/Kofani faceoff Zahir1+.jpg
 ---
 You can now buy *Blood of the Seven* **directly from the author** here on kthari.com:
 
