@@ -10,7 +10,7 @@
       "title": "Kofári the Unifier — The Sun King",
       "kingdom": "Ūsángà wà Kofári — The Lion Kingdom",
       "knownFor": "Uniting the Seven Kingdoms beneath the Sun Throne, and holding them there for twenty-three years.",
-      "bio": "He did not conquer the Seven into one — or not only. He married them: seven queens, seven crowns, and a generation of children who would be walking treaties. He ate alone by design, because distance preserved the difference between a man and a king.",
+      "bio": "He did not conquer the Seven into one — or not only. He married them: seven queens, seven crowns, and a generation of children who would be walking treaties. He ate alone by design, because distance preserved the difference between a man and a king.\n\nFour times a year he rode into the Gorilla mountains and came down grey, and let the empire believe it was a woman.",
       "quote": "He carried the empire like armor — heavy, but necessary."
     },
     {
@@ -29,8 +29,8 @@
       "image": "/images/Prince Kofani n lion+.jpg",
       "title": "The Weight-Bearer",
       "kingdom": "Ūsángà wà Kofári — The Lion Kingdom",
-      "knownFor": "First Heir of the Sun Throne — and a crown he refused to put on when it would have been easier.",
-      "bio": "Bonded before he could stand: cub and infant found together too often for anyone to keep separating them. He fights the way his father fought — giving ground until a stronger man has spent everything on ground that does not matter.",
+      "knownFor": "Carrying imperial rule, the Mountain Seal, and a crown he refused to put on when it would have been easier.",
+      "bio": "Bonded before he could stand: cub and infant found together too often for anyone to keep separating them. He fights the way his father fought — giving ground until a stronger man has spent everything on ground that does not matter.\n\nEach month he goes down alone and opens his palm over an obsidian sigil, feeding blood into grooves worn by his father's hand. He tells no one. Inheritance is not shared.",
       "quote": "Some men wear crowns. Others carry them."
     },
     {
@@ -49,8 +49,8 @@
       "image": "/images/Ranu battle ready+.jpg",
       "title": "Koránu the Lion's Fire",
       "kingdom": "Ūsángà wà Kofári — The Lion Kingdom",
-      "knownFor": "Embodying the fierce spirit of the Lion bloodline.",
-      "bio": "Raised among generals, he learned that hesitation costs lives and has spent his life proving it in the one arena where the lesson is sometimes wrong. He screamed once as a boy, over a lizard, and decided no room would ever hear him lose control again.",
+      "knownFor": "Embodying the fierce spirit of the Lion bloodline — and seeing, before any council, what the war was actually about.",
+      "bio": "Raised among generals, he learned that hesitation costs lives and has spent his life proving it in the one arena where the lesson is sometimes wrong. He screamed once as a boy, over a lizard, and decided no room would ever hear him lose control again.\n\nAt four feet from a starving enemy, he counted ribs, boots and teeth, and arrived at the most important fact of the war. He was right. Nobody wrote it down.",
       "quote": "A lion that hesitates invites the hunt."
     },
     {
@@ -59,7 +59,7 @@
       "image": "/images/Lion Priness_Anima+.jpg",
       "title": "Amani the Listening Mind",
       "kingdom": "Ūsángà wà Kofári — The Lion Kingdom",
-      "knownFor": "Princess of the Lion Dynasty.",
+      "knownFor": "Finding, alone and in eleven days, the hand no general or spymaster in the empire had located.",
       "bio": "Nobody watches the princess. She stopped taking that as an insult at fifteen and started taking it as an instrument. She counts with her left hand and keeps a ledger no one has read.\n\nWhat she wants is not to be believed — that is only a matter of assembling enough. What she wants is to be known. Once. Without having to prove it first.",
       "quote": "The loudest voices rarely control the room."
     },
@@ -70,7 +70,7 @@
       "title": "Razi the Small Witness",
       "kingdom": "Ūsángà wà Kofári — The Lion Kingdom",
       "knownFor": "Recording the fracture of the empire — and holding something true about nearly everyone in the palace.",
-      "bio": "Twelve years old and holding no command, he collects what others discard: hesitations, omissions, the half-second before a room decides.\n\nHis father charged him to get the history right before the tellings made him taller. Nobody appointed Razi the record. He appointed himself.",
+      "bio": "Twelve years old and holding no command, he collects what others discard: hesitations, omissions, the half-second before a room decides. He has begun trading in what he knows, and does not much like himself for it, and does it anyway.\n\nHis father charged him to get the history right before the tellings made him taller. Nobody appointed Razi the record. He appointed himself.",
       "quote": "Children hear what kings forget."
     },
     {
@@ -80,18 +80,34 @@
       "title": "Makaru the War Pillar — The Lion's Wall",
       "kingdom": "Ūsángà wà Kofári — The Lion Kingdom",
       "knownFor": "Commanding the armies that secured the empire, and reading a field the way another man reads a page.",
-      "bio": "He does not look at his own army before a battle. He looks at the sky, the ground, and a bird that went up early and has not come back down.",
+      "bio": "He does not look at his own army before a battle. He looks at the sky, the ground, and a bird that went up early and has not come back down.\n\nHe moved three thousand five hundred cavalry in the dark on a report he believed because it was the worst of two and never explained why. The man who benefited will remember it as the difference.",
       "quote": "A kingdom survives on courage. An empire survives on discipline."
     },
     {
       "group": "The Lion Kingdom",
-      "name": "General Sàhira Nombé",
-      "image": "/images/Warrior at sunset with golden armorPage_2-high fidelity v3-2x.jpg",
-      "title": "Commander of the Sun Veil",
+      "name": "Sengaru",
+      "title": "The First Blade",
       "kingdom": "Ūsángà wà Kofári — The Lion Kingdom",
-      "knownFor": "Leading the order of disciplined women bonded to war lionesses.",
-      "bio": "They say she survived forty days alone in the Hyena forest as a child, and swam the Makor in flood to carry a warning. She has never corrected the stories and never confirmed them. Belief marches better than truth.",
-      "quote": "If the reports are true — nothing that still remembers being hunted."
+      "knownFor": "Teaching three generations of princes the one lesson a man remembers once the noise starts.",
+      "bio": "Fifty-four, in a plain tunic, with a shield repaired three times and never replaced. He has been pretending to tire at the same point in a bout for thirty years, and it has never once failed him.",
+      "quote": "Wide men die. Try to be narrow."
+    },
+    {
+      "group": "The Lion Kingdom",
+      "name": "Lord Haroun",
+      "title": "Keeper of the Border Ledger",
+      "kingdom": "Ūsángà wà Kofári — The Lion Kingdom",
+      "knownFor": "Desert-born, Lion-sworn — the hand the empire's border ledger passes under.",
+      "bio": "He came to the Lion capital in Princess Zahra's train before the princess he taught to play seshu was born, and never went home. Thirty years later the empire's border ledger passes under a hand that learned to count water before it learned to count grain.\n\nHe is genuinely widely liked.",
+      "quote": "Power is never taken. It is allowed — until it is not."
+    },
+    {
+      "group": "The Lion Kingdom",
+      "name": "Sekári",
+      "title": "The Rebel Brother",
+      "kingdom": "Ūsángà wà Kofári — The Lion Bloodline",
+      "knownFor": "The rebellion that nearly shattered the empire.",
+      "bio": "It was Sekári who first found the child. Lions were bowing in the lower city — the old dark ones, off the plain — and an infant took his own stormwood lion by the lip, unafraid. He wrote to his brother that night. Everything after followed from that letter."
     },
     {
       "group": "The Elephant Kingdom",
@@ -109,9 +125,18 @@
       "image": "/images/Prince TamariPage_2-high fidelity v3-2x.jpg",
       "title": "Támari the Remembering Prince",
       "kingdom": "Nàyámbé-Tárà — The Elephant Kingdom",
-      "knownFor": "Preserving the living history of K'Thari.",
-      "bio": "Told by a girl of eleven that her father was under the middle store, he knelt, asked the man's name, then hers, and told her to stay at his shoulder because she would know his voice and he would not.",
+      "knownFor": "Preserving the living history of K'Thari, and understanding — in the ash of a burned depot — what had truly been taken.",
+      "bio": "Told by a girl of eleven that her father was under the middle store, he knelt, asked the man's name, then hers, and told her to stay at his shoulder because she would know his voice and he would not.\n\nThe western store had held seeds, not food. Standing in the ash, he understood the raid completely. They had not taken the kingdom's food. They had taken next year.",
       "quote": "The future belongs to those who remember the past."
+    },
+    {
+      "group": "The Elephant Kingdom",
+      "name": "Nàyáni",
+      "title": "The One Who Does Not Forget",
+      "kingdom": "Nàyámbé-Tárà — The Elephant Kingdom",
+      "knownFor": "Perfect recall, delivered flatly and with his eyes open.",
+      "bio": "Tested with a ledger, he returns the sacks, the forts, the cracked axle, and the funeral that delayed the wheelwright — which is not in the ledger, and which a scribe mentioned to him once, in spring, while annoyed.\n\nHe also remembers every unkindness ever shown to him, in the same detail, and has never retaliated for any of them. That is going to be a problem when he decides it is time.",
+      "quote": "He remembers the funeral you mentioned in spring."
     },
     {
       "group": "The Crocodile Kingdom",
@@ -120,8 +145,35 @@
       "title": "Rékira of Still Waters",
       "kingdom": "Mákòndaré — The Crocodile Kingdom",
       "knownFor": "Governing the waterways — and arriving barefoot and unannounced with a warning the Lion court did not want.",
-      "bio": "She came at dusk on a raised platform, riding a wind that smelled of wet stone, and the gates opened without anyone giving the order. She knelt — not in submission but acknowledgement — and told a king the Oracle was dead, because the river had felt her heart stop.",
+      "bio": "She came at dusk on a raised platform, riding a wind that smelled of wet stone, and the gates opened without anyone giving the order. She knelt — not in submission but acknowledgement — and told a king the Oracle was dead, because the river had felt her heart stop.\n\nAt the queens' fountain she says nothing for forty minutes at a time. That is not neutrality. She has already decided and is waiting to see who says it for her.",
       "quote": "The river does not rush. It arrives."
+    },
+    {
+      "group": "The Crocodile Kingdom",
+      "name": "Princess Nyira",
+      "title": "Nyira of the Waiting Waters",
+      "kingdom": "Mákòndaré — The Crocodile Kingdom",
+      "knownFor": "Reading, from a cut rope, exactly what a fire was designed to accomplish.",
+      "bio": "She walked the charred planks of a burned crossing and traced the blackened grain like a script. Only the upstream mooring lines had been cut — so the burning boats would drift into the others rather than away.\n\nTwelve boats, and every one of them a crossing. With Séra-bend gone, every cart in the kingdom moves on a single road. That was the cut. Not the boats. The choice.",
+      "quote": "Still waters rarely remain harmless."
+    },
+    {
+      "group": "The Crocodile Kingdom",
+      "name": "Rékani",
+      "title": "The One Who Reads the Water",
+      "kingdom": "Mákòndaré — The Crocodile Kingdom",
+      "knownFor": "Weather, timing, and the patience of the river-people — together with the flaw that grows from it.",
+      "bio": "She has predicted three rainstorms and a flood from a fountain, and has been right every time. She never speaks first and never moves toward anything.\n\nShe waits until the situation comes to her, then acts once, completely. One day she will wait a fraction too long, and she knows it.",
+      "quote": "You can see all of it in a fountain, if you stop expecting the fountain to be interesting."
+    },
+    {
+      "group": "The Crocodile Kingdom",
+      "name": "Ódu and Ochára",
+      "title": "The Tide-Born",
+      "kingdom": "Mákòndaré — The Crocodile Kingdom",
+      "knownFor": "Born beneath a rare convergence of tides, and watched more closely than the throne.",
+      "bio": "One sees the future in still water. The other understands the currents of men. Neither gift is much use without the other, which the priests regard as either a mercy or a design.\n\nThey stood through the whole of the Unifier's funeral without moving, watching the plaza with a focus that unsettled grown envoys.",
+      "quote": "The water shows. The other explains."
     },
     {
       "group": "The Leopard Kingdom",
@@ -129,8 +181,8 @@
       "image": "/images/Queen SenyaraPage_2-high fidelity v3-2x.jpg",
       "title": "Ìlayé the Hidden Crown",
       "kingdom": "Sényà-Nórù — The Leopard Kingdom",
-      "knownFor": "Mastering silent power.",
-      "bio": "Her kingdom does not march; it moves individuals, and its reach is considerably longer than its borders. She arrives without being seen.",
+      "knownFor": "Mastering silent power — and voting, without expression, for a net that will one day catch her own people.",
+      "bio": "Her kingdom does not march; it moves individuals, and its reach is considerably longer than its borders. She arrives without being seen.\n\nShe sat opposite the Lion queen and said one word. The Lion queen said one word back. Both knew precisely what had been acknowledged, and neither mentioned it again.",
       "quote": "The quiet step is the one that reaches the throat."
     },
     {
@@ -140,8 +192,35 @@
       "title": "Veyara of the Hidden Crown",
       "kingdom": "Sényà-Nórù — The Leopard Kingdom",
       "knownFor": "Representing the Leopard in the imperial courts — and watching the gaps between the torches rather than the torches.",
-      "bio": "She grew up alongside the Lion heirs, running from the palace and being dragged back, and there is a day in the fields that neither she nor Kofáni has ever mentioned aloud.",
+      "bio": "She grew up alongside the Lion heirs, running from the palace and being dragged back, and there is a day in the fields that neither she nor Kofáni has ever mentioned aloud.\n\nFrom a garden court she said something was moving beneath the capital's stone — and, asked whether she meant the mountain, said no. She meant the men standing above it.",
       "quote": "The unseen hand moves the throne."
+    },
+    {
+      "group": "The Leopard Kingdom",
+      "name": "Sényà Káli",
+      "title": "The Night Silk",
+      "kingdom": "Sényà-Nórù — The Leopard Kingdom",
+      "knownFor": "Running the Hidden Crown's networks across the Seven — and possessing one flaw, which exactly one person has found.",
+      "bio": "She is the best anyone in that palace has ever seen.\n\nHer flaw is not carelessness but appetite: she watches when she should move.",
+      "quote": "The sharpest blade is the one no one sees."
+    },
+    {
+      "group": "The Leopard Kingdom",
+      "name": "General Nalayé",
+      "title": "Nalayé the Shadow General",
+      "kingdom": "Sényà-Nórù — The Leopard Kingdom",
+      "knownFor": "Commanding the Leopard's covert strike forces, and telling the Lion heir first that the hyenas were moving strangely.",
+      "bio": "She knows wars are decided long before armies meet. Her loyalty to the Leopard throne is not in question; her history with Kofáni is a separate matter, and older than either of their offices.\n\nShe stood beside him at his father's bier and said hyenas do not organise that well on their own — then that some of them were still on his side, and walked back into the dark.",
+      "quote": "A blade in shadow still cuts."
+    },
+    {
+      "group": "The Leopard Kingdom",
+      "name": "Àdemi",
+      "title": "Never Where You Left Him",
+      "kingdom": "Sényà-Nórù — The Leopard Kingdom",
+      "knownFor": "Moving unseen, already beyond his tutors — and enjoying it, which is the part that will cost him.",
+      "bio": "Caught on the armory roof four times; nobody could explain how, and nobody could decide what to charge him with. He arrives half a second after conversations turn to him, leaves rooms during the part where people say what they mean, and once vanished for exactly the length of a private argument and reappeared eating a fig.\n\nHe is never given orders, only distances, and he closes them without sound. A black leopard he calls Ónyi keeps his pace — young, the colour of a shut room, caught twice by no torch in the Leopard court, answering to him and no one above him. He trusts the dark the way other boys trust walls; the dark is patient, and it is not always on his side.",
+      "quote": "He was, unmistakably, enjoying it. Which is different."
     },
     {
       "group": "The Gorilla Kingdom",
@@ -149,8 +228,8 @@
       "image": "/images/Queen MbarukaPage_2-high fidelity v3-2x (1).jpg",
       "title": "Mbáruka the Mountain Matriarch",
       "kingdom": "Mbárù-Kéntà — The Gorilla Kingdom",
-      "knownFor": "Preserving the discipline of the mountain clans.",
-      "bio": "For more than twenty years the Unifier came four times a year, and the Seven believed it was an affair. She let them.",
+      "knownFor": "Preserving the discipline of the mountain clans — and carrying, for twenty years, a question she was too proud to ask.",
+      "bio": "For more than twenty years the Unifier came four times a year, and the Seven believed it was an affair. She let them. She readied the hall each time. He did not come to the hall. He went up, above the tree line, and came down grey.\n\nShe saw him perhaps once in three visits, and nearly every time she did, she left that season carrying a child. She stopped asking what he did up there.",
       "quote": "Storms break against the mountain long before the mountain notices them."
     },
     {
@@ -159,9 +238,36 @@
       "image": "/images/Dákoru and the armored gorillasPage_2-high fidelity v3-2x.jpg",
       "title": "Thúramba the Ironback Prince",
       "kingdom": "Mbárù-Kéntà — The Gorilla Kingdom",
-      "knownFor": "Commanding the Ironbacks.",
-      "bio": "Volatile and contemptuous of courts. He lost his first bonded gorilla beyond the mountains and was told the kingdom had chosen peace instead of vengeance. He has never forgiven it.",
+      "knownFor": "Commanding the Ironbacks — and never forgiving the peace his kingdom chose.",
+      "bio": "Volatile and contemptuous of courts. He lost his first bonded gorilla beyond the mountains and was told the kingdom had chosen peace instead of vengeance. He has never forgiven it.\n\nHe stood above a burning camp and did not watch the camp. He watched past it, where something moved that had no shape.",
       "quote": "Stone can stand forever. But fire reshapes the mountain."
+    },
+    {
+      "group": "The Gorilla Kingdom",
+      "name": "Prince Mbáru Késha",
+      "title": "Mbáru Késha the Living Mountain",
+      "kingdom": "Mbárù-Kéntà — The Gorilla Kingdom",
+      "knownFor": "Embodying disciplined strength — and keeping the most dangerous piece of information in K'Thari to himself.",
+      "bio": "He does not prove strength; he lets it be recognised. Bonded to the silverback Koro, whose single chest-beat on arrival he considers a complete statement.\n\nHe found three burn points on the northern faces of a watchtower — the side reachable only from above. There is one road down from there, into the old sealed places his clans do not discuss. He has told no one.",
+      "quote": "Mountains do not rush. Yet nothing moves them."
+    },
+    {
+      "group": "The Gorilla Kingdom",
+      "name": "Mbáruni",
+      "title": "The Gentlest Hands in K'Thari",
+      "kingdom": "Mbárù-Kéntà — The Gorilla Kingdom",
+      "knownFor": "Extraordinary strength, arrived early — and a weakness someone will find before he does.",
+      "bio": "He has hands that cannot be made to look right holding a cup, and a system for getting insects out of windows involving a cup and a folded page, about which he is faintly embarrassed.\n\nWhen a smaller half-sibling broke an arm he ran the whole way holding her, and cried, and was mortified about the crying rather than the running. He cannot refuse anyone who asks him kindly.",
+      "quote": "They will use him. He will let them."
+    },
+    {
+      "group": "The Gorilla Kingdom",
+      "name": "Lord Kémbara",
+      "title": "Kémbara the Unthrown — Lord of the Eastern Pass",
+      "kingdom": "Mbárù-Kéntà — The Gorilla Kingdom",
+      "knownFor": "Never taken off his feet — on the wrestling sand or in council — and guarding the road the Unifier rode for twenty years and never explained.",
+      "bio": "Before the grey came into his beard he was the finest wrestler the Seven ever put on the sand: champions came to throw him, and were thrown, and went home. He does not fight now — a man the mountains remember need not raise his hand to be felt in a room.\n\nHe wears no crest and rides no banner, and counsels patience the way other men counsel war: preparation is not rebellion. He is his sister's shield, and he waits for her and the mountain — for if the Seven fracture, the mountains come home to themselves.",
+      "quote": "A man who cannot be thrown does not need to push. He only needs to stand where the other man falls."
     },
     {
       "group": "The Serpent Kingdom",
@@ -169,18 +275,63 @@
       "image": "/images/Queen SelinPage_2-high fidelity v3-2x.jpg",
       "title": "The Serpent Queen",
       "kingdom": "Bákungà — The Serpent Kingdom",
-      "knownFor": "Ruling through information and traded truth.",
-      "bio": "Bákungà does not rule land. It rules information: messages that move unseen, alliances formed in silence. She is rarely seen using any of it.",
+      "knownFor": "Ruling through information and traded truth — and doing, once, the kindest thing anyone did that year.",
+      "bio": "Bákungà does not rule land. It rules information: messages that move unseen, alliances formed in silence. She is rarely seen using any of it.\n\nShe has spent her life among watched children. So when a palace began quietly watching a fourteen-year-old girl without admitting it, Selin moved her — and refused to claim the larger word for what she was doing.",
       "quote": "Wars are not won on battlefields. They are decided before them."
+    },
+    {
+      "group": "The Serpent Kingdom",
+      "name": "Nyeka and Nyoka",
+      "title": "The Divided Sight, Complete",
+      "kingdom": "Bákungà — The Serpent Kingdom",
+      "knownFor": "The gift arriving whole, in two halves that must be in the same room to be worth anything.",
+      "bio": "One dreams the event. The other reads the pattern inside the dream. Separately they are unremarkable young women with poor sleep; together, the Serpent court is never surprised by the same thing twice.\n\nAt the Unifier's funeral they did not look at the bier once. They watched the living rulers of K'Thari instead, and the Lion queen noticed.",
+      "quote": "One sees. One understands. Neither sleeps well."
+    },
+    {
+      "group": "The Serpent Kingdom",
+      "name": "Bákira and Báseli",
+      "title": "The Broken Pair",
+      "kingdom": "Bákungà — The Serpent Kingdom",
+      "knownFor": "The gift arriving wrong, and a quarrel that has lasted their entire lives.",
+      "bio": "What one glimpses, the other cannot finish; what one reasons through, the other cannot see. They have argued about it since they were small, loudly and in public.\n\nEach believes the other received the better half. Both are correct, which is the part nobody has the heart to explain.",
+      "quote": "They argue because neither can finish a thought alone."
+    },
+    {
+      "group": "The Serpent Kingdom",
+      "name": "Selára",
+      "title": "The One Who Hears Omissions",
+      "kingdom": "Bákungà — The Serpent Kingdom",
+      "knownFor": "Hearing what a room refuses to say — and trusting no one, including herself.",
+      "bio": "Not sounds. Absences. She can tell you which of eleven people avoided a subject, which two avoided the same one, and which of them was the reason.\n\nTold a small lie once, she explained precisely how it had been built — then, in a different and much worse voice, said he could simply have told her he did not want to say.",
+      "quote": "You could have just said you didn't want to tell me."
+    },
+    {
+      "group": "The Serpent Kingdom",
+      "name": "Selu and Sévan",
+      "title": "The Watched",
+      "kingdom": "Bákungà — The Serpent Kingdom",
+      "knownFor": "Being nine and observed for a gift that has not appeared.",
+      "bio": "Nothing has shown yet — no dream, no pattern, no unsettling remark at the wrong moment. By Serpent reckoning they are late, though nobody says the word in front of their mother.\n\nSo the waiting is the childhood they are having. Their eldest sisters remember being watched and have said nothing to them about it.",
+      "quote": "Everyone is watching."
     },
     {
       "group": "The Hyena Territories",
       "name": "Queen Vékhara",
       "title": "The Seventh of the Seven",
       "kingdom": "Zákhàrà-Vé — The Hyena Territories",
-      "knownFor": "Sitting a foot outside the circle for twenty-three years.",
-      "bio": "A herbalist who once saved the Unifier's life and has not seen her homeland since.",
+      "knownFor": "Sitting a foot outside the circle for twenty-three years — and being the only living person besides the boy who knows what he carries.",
+      "bio": "A herbalist who once saved the Unifier's life and has not seen her homeland since. She heard a king talk in a fever for four days. That is why he married her, and she has never said one word of it aloud in that palace.\n\nShe has counted eleven cuts on a boy's left palm this year, in the same place, never permitted to close. She knows where he will have to go, and that he will not be able to tell anyone.",
       "quote": "We both knew what it was on the day we made it."
+    },
+    {
+      "group": "The Hyena Territories",
+      "name": "Zákhira",
+      "title": "The Girl Nobody Will Name",
+      "kingdom": "Zákhàrà-Vé and Ūsángà wà Kofári",
+      "knownFor": "Being the only child in that courtyard who is not the king's.",
+      "bio": "Born in Zákhàrà-Vé, raised in the Lion palace, she speaks with the flat vowels of the capital and once put a lizard in a prince's boot and was chased down four corridors for it.\n\nSince the southern fires she has stopped eating in the hall. Nobody told her to. Nobody has said one word about her at all — and that is precisely the thing that has been done.",
+      "quote": "When it gets worse, somebody is going to remember what I am."
     },
     {
       "group": "The Hyena Territories",
@@ -188,39 +339,204 @@
       "image": "/images/Zákhara Daro and his hyenaPage_2-high fidelity v3-2x.jpg",
       "title": "The Bone Strategist",
       "kingdom": "Zákhàrà-Vé — The Hyena Territories",
-      "knownFor": "War Advisor of the Devouring Lands.",
+      "knownFor": "Designing the campaign that fractured the Seven without taking a single square foot of ground.",
       "bio": "He carries a scar given him by Kofári — not in humiliation, in mercy, which cut deeper than iron. He burns supply routes in kingdoms that are not his, because a frightened kingdom looks sideways rather than outward.",
       "quote": "Bring me smoke. Not glory."
     },
     {
-      "group": "Beyond the Seven",
+      "group": "The Desert Kingdom",
       "name": "Prince Zahír al-Kharim",
       "image": "/images/Prince ZahirPage_2-high fidelity v3-2625w.jpg",
       "title": "Zahír of the Endless Horizon",
       "kingdom": "The Desert Kingdom — beyond K'Thari",
-      "knownFor": "Heir of Al-Kharim — balancing the desert against the politics of the Seven.",
-      "bio": "Raised where survival demands timing and respect for forces beyond control, he does not seek dominance. He studies it. He climbed the Sun Steps with a white lion at his side and silenced a plaza that had dismissed the traders' stories as exaggeration.",
+      "knownFor": "Balancing the desert against the politics of the Seven, and naming the rarest thing the Lion heir has.",
+      "bio": "Raised where survival demands timing and respect for forces beyond control, he does not seek dominance. He studies it. He climbed the Sun Steps with a white lion at his side and silenced a plaza that had dismissed the traders' stories as exaggeration.\n\nWhen the Lion brothers came within a breath of drawing steel and did not, he told Kofáni he had something rare: a brother who speaks before resentment takes root. Then he added that it would hold only for now.",
       "quote": "The desert teaches patience to those who wish to survive."
     },
     {
-      "group": "Beyond the Seven",
+      "group": "The Star Temple",
       "name": "The Oracle",
       "image": "/images/The OraclePage_2-high fidelity v3-2x.jpg",
       "title": "The Voice Beneath the Stars",
-      "kingdom": "K'Thari-Úmbrà — The Secret Land",
-      "knownFor": "Speaking the prophecy that opened the age.",
-      "bio": "She was older than living memory, had not stood in years, and had not screamed since the first crown was forged. She screamed at the end, and not from pain.",
+      "kingdom": "K'Thari-Úmbrà — The Secret Lands",
+      "knownFor": "Speaking the prophecy that opened the age — and dying in the middle of it.",
+      "bio": "She was older than living memory, had not stood in years, and had not screamed since the first crown was forged. She screamed at the end, and not from pain.\n\nSeven crowns bound by blood, undone by blood. Beneath the temple, while her blood filled the carved sigils, a seal that had held for generations did not shatter. It loosened.",
       "quote": "The stars do not warn. They remember."
     },
     {
-      "group": "Beyond the Seven",
+      "group": "The Star Temple",
+      "name": "Árumba N'Ketu",
+      "title": "The Last Listener",
+      "kingdom": "K'Thari-Úmbrà — The Secret Lands",
+      "knownFor": "Guarding the oldest prophecies, and answering the one summons in the empire he never asks the reason for.",
+      "bio": "He comes up from the lower road on foot, and the Hyena queen meets him at the gate, and the other six pretend not to notice that those two have known one another for forty years. He does not sit.\n\nAsked whether it was coming back, he considered the lamp and said it had never gone anywhere. It was set down — and a thing set down can be picked up by somebody who did not put it there.",
+      "quote": "The stars reveal the weight already moving toward it."
+    },
+    {
+      "group": "The Star Temple",
+      "name": "The Oracle of 7",
+      "title": "The Seven Who Watch the Ground",
+      "kingdom": "K'Thari-Úmbrà — The Secret Lands",
+      "knownFor": "Watching the ground while the world watches the sky.",
+      "bio": "Seven old women beneath an open dome, one sent from each kingdom and none ever sent home. Older than the courts of men, older than crowns. The eighth seat belongs to the Star Temple, and has been empty since the night the sky split.\n\nThey can sit a full day without moving. When they shift, something has changed, and no one in the palaces above will be told what.",
+      "quote": "Say it. Once. Here. While there is still nobody above us who has to carry it."
+    },
+    {
+      "group": "The Sun Veil Legions",
+      "name": "General Sàhira Nombé",
+      "image": "/images/Warrior at sunset with golden armorPage_2-high fidelity v3-2x.jpg",
+      "title": "Commander of the Sun Veil",
+      "kingdom": "Ūsángà wà Kofári — The Lion Kingdom",
+      "knownFor": "Leading the order of disciplined women bonded to war lionesses — and finding the shape inside three fires.",
+      "bio": "They say she survived forty days alone in the Hyena forest as a child, and swam the Makor in flood to carry a warning. She has never corrected the stories and never confirmed them. Belief marches better than truth.\n\nGiven three raids in three kingdoms she counted the choices, not the damage: the depot that mattered in nine months, the crossing that forced every cart onto one road, the tower that watched the high country.",
+      "quote": "If the reports are true — nothing that still remembers being hunted."
+    },
+    {
+      "group": "The Sun Veil Legions",
+      "name": "Léyana Soro-Mbeki",
+      "title": "The Young Lion of the Sun Veil",
+      "kingdom": "Ūsángà wà Kofári — The Lion Kingdom",
+      "knownFor": "Being the generation that will defend an empire it did not build.",
+      "bio": "Admitted young into a legion where young admissions rarely survive, she carries herself like someone told from childhood that fear is a tool rather than a master.\n\nShe stepped out of line once to adjust a strap, and a prince noticed, because her hands did not tremble. The supreme general noticed at the same moment and said this one would survive war.",
+      "quote": "Every empire is defended by those who were not alive when it was born."
+    },
+    {
+      "group": "The Sun Veil Legions",
+      "name": "Lérima",
+      "title": "Bonded to Ríka",
+      "kingdom": "Ūsángà wà Kofári — The Lion Kingdom",
+      "knownFor": "Nine years of training, and four seconds on the Broken Ridge that undid none of it.",
+      "bio": "Ríka was smaller than the rest and faster than all of them. She went into a beast twice her weight at full speed, took it off its feet, and did not come up.\n\nLérima killed the two men standing over her, then knelt with both hands in bloody fur until a captain hauled her upright and put her back in the line. She went. She did not make a sound.",
+      "quote": "Not then, and not that night."
+    },
+    {
+      "group": "The Mountain Clans",
+      "name": "Rathen",
+      "title": "The Cold Heir",
+      "kingdom": "The Mountain Clans",
+      "knownFor": "Watching the empire's fractures from the highlands, and arranging for them to widen.",
+      "bio": "He has his father's eyes and none of his warmth.\n\nHe sends word not to the Hyena, who are spent, but to the desert, because desert storms do not ask permission.",
+      "quote": "Time breaks what swords cannot."
+    },
+    {
+      "group": "The Mountain Clans",
+      "name": "Sahri",
+      "title": "The Quiet Watcher",
+      "kingdom": "The Mountain Clans",
+      "knownFor": "Understanding rather than seizing — and knowing one thing her brother does not.",
+      "bio": "Where Rathen calculates, Sahri observes. Accused of pitying the Lion heir, she corrected the word: she studies him.\n\nHer house lost a throne and an army but never its lions. An old lioness — grey at the muzzle, fierce, and long past needing to prove it — keeps to Sahri's side while she watches, and she chose the daughter who observes over the son who counts.",
+      "quote": "Silence reveals more than questions."
+    },
+    {
+      "group": "The Bonded",
+      "name": "Tárun",
+      "title": "The Lion of the Heir",
+      "kingdom": "Ūsángà wà Kofári — bonded to Prince Kofáni",
+      "knownFor": "Choosing a child before the child could stand, and never afterward treating him as one.",
+      "bio": "Cub and infant were found together too often to keep separating — the cub in the cradle, the baby asleep against his flank in a store-room with the door shut from outside. Full-grown, he walked his first battlefield beside a boy of nine.",
+      "quote": "He had been the person Tárun chose, before either of them could do anything about it."
+    },
+    {
+      "group": "The Bonded",
+      "name": "Zaré",
+      "title": "The Restless",
+      "kingdom": "Ūsángà wà Kofári — bonded to Prince Koránu",
+      "knownFor": "Sharing his prince's temper, his courage, and his tells.",
+      "bio": "He paces a tight arc and does not stop, telling four hundred men — half of them seventeen — that their prince is nervous.\n\nOn the quarry field he took a hyena-beast down, held it, and did not finish it. A prince four feet away used the pause to count its ribs, and understood what the empire had missed.",
+      "quote": "He does not do still."
+    },
+    {
+      "group": "The Bonded",
+      "name": "Sarún",
+      "title": "The Line That Holds",
+      "kingdom": "Ūsángà wà Kofári — bonded to Prince Ashkur",
+      "knownFor": "Standing where the charge breaks — and never once standing in front of the throne uninvited.",
+      "bio": "He does not take the front. He takes the place the front will fall back to — a pace behind Ashkur's left shoulder, where a commander's lion learns the whole shape of a field by refusing to chase any part of it. Men who have followed the Lion's Spear into three campaigns say they have never seen Sarún run first, and never seen him arrive late.\n\nOn the day Ashkur would not kneel, Sarún lay across the mouth of the tent and let the elephant pass without rising. Recognition, not challenge — the same sentence his prince had come to speak. When Ashkur said he would stand in front of his brother, the lion was already doing it.",
+      "quote": "Not submission. Recognition."
+    },
+    {
+      "group": "The Bonded",
+      "name": "Sérak-M'Balu",
+      "title": "The Weight of Memory",
+      "kingdom": "Nàyámbé-Tárà — bonded to the Elephant royal house",
+      "knownFor": "Lifting what men cannot, and remembering what men would rather not.",
+      "bio": "He moves like an advancing hill, and the ground announces the Elephant delegation before the heralds do.\n\nAt a burned depot he did not tear the beams away. He lifted them, adjusting weight, stopping twice entirely, because a wrong lift would have dropped four tons of roof through the space where a man's chest was.",
+      "quote": "Do not rush."
+    },
+    {
+      "group": "The Bonded",
+      "name": "Bayad",
+      "title": "The Weather Out of the Desert",
+      "kingdom": "The Desert Kingdom — bonded to Prince Zahír al-Kharim",
+      "knownFor": "Walking out of the sand into a nine-year-old's courtyard, lying down at his feet, and never once explaining itself since.",
+      "bio": "Leaner than the lions of the Sun Kingdom, its coat bright as desert bone, it moves without sound and stands like a piece of the weather — the thing traders described and the plaza dismissed as exaggeration, until it climbed the Sun Steps at Zahír's side and the whole plaza went quiet.\n\nIt does not answer the terrace lions when they rise to it. It holds their eyes and offers nothing, the way its prince offers nothing, and lets the silence do the work a roar would only spend.",
+      "quote": "The desert teaches patience to those who wish to survive."
+    },
+    {
+      "group": "The Bonded",
+      "name": "Koro",
+      "title": "The Silverback",
+      "kingdom": "Mbárù-Kéntà — bonded to Prince Mbáru Késha",
+      "knownFor": "Announcing rather than challenging — his kingdom's whole philosophy in one gesture.",
+      "bio": "Massive, still, unchained among Lion guards who have collectively decided not to think about it. He beats his chest once on arrival. Not a challenge. An announcement.\n\nWhen a Lion prince's lion claimed space on the Sun Steps, Koro shifted his weight — subtly, deliberately — and every envoy present understood the sentence.",
+      "quote": "Not a challenge. An announcement."
+    },
+    {
+      "group": "The Bonded",
+      "name": "Séza",
+      "title": "The Leopard in the Dark",
+      "kingdom": "Sényà-Nórù — bonded to Sényà Káli",
+      "knownFor": "Being somewhere else by the time you look.",
+      "bio": "Unleashed and entirely unconcerned, she walks at her companion's heel through torchlight and is never quite inside it. Scouts report gold eyes in tall grass, and then no eyes at all.\n\nWhen Sényà Káli finishes a conversation with something she has not actually said, Séza's tail flicks once. Those who watch for it find it more informative than anything spoken that evening.",
+      "quote": "Like a signature. Like a promise."
+    },
+    {
+      "group": "The Bonded",
+      "name": "The Sun Veil Lionesses",
+      "image": "/images/War lionesses at warPage_2-high fidelity v3-2625w.jpg",
+      "title": "The Ones Who Agree",
+      "kingdom": "Ūsángà wà Kofári — bonded to the Sun Veil Legion",
+      "knownFor": "Being the only bond in the empire a woman is given rather than born to — chosen in a swept yard at dawn, by the lioness, not the child.",
+      "bio": "A lioness does not obey; she agrees, and the difference is the whole of the order. Barsu was old and grey before her name meant anything, but she lay down in the dawn yard beside a girl eight days old and made Léyana Soro-Mbeki a legionnaire before Léyana could hold up her own head. What the girl grieved, the lioness sat through.\n\nAt Broken Ridge a lioness called Ríka went into a Hyena beast twice her weight and did not come up; the Legion does not mark such deaths with words. On the same field, Léyana's lioness Imara set herself against a beast built to end her and would not be moved, and kept her companion alive by refusing the ground. Ríka agreed; Imara held; the order is made of both.",
+      "quote": "A lioness does not obey. She agrees."
+    },
+    {
+      "group": "The Bonded",
+      "name": "The Ironbacks",
+      "image": "/images/Dákoru and the armored gorillasPage_2-high fidelity v3-2x.jpg",
+      "title": "Thúramba's War Band",
+      "kingdom": "Mbárù-Kéntà — armored war-gorillas of the mountain clans",
+      "knownFor": "Being feared across the highlands, including — quietly — by the people who raised them.",
+      "bio": "Plated in iron and bone, disciplined the way avalanches are disciplined, answerable to one volatile prince who believes strength should rule openly.\n\nThey do not garrison. They wait above the tree line, and they come down. What it costs to keep them is not discussed at council.",
+      "quote": "Where they pass, the stone remembers."
+    },
+    {
+      "group": "The Bonded",
+      "name": "Rih",
+      "title": "The Letter on the Wind",
+      "kingdom": "The Desert Kingdom — flies for Prince Zahír al-Kharim",
+      "knownFor": "Carrying the only words Zahír sends without weighing them first.",
+      "bio": "Where the Seven bind beasts, the desert keeps birds, and a prince far from home keeps one bird above all. Rih goes out from Zahír's wrist at the day's edge and is gone before the guards have decided whether to be alarmed — a dark stroke thrown south across a sky the colour of a struck coal. He comes back with the reply lashed to his leg and waits, unhooded, until the seal is broken.\n\nThe letters go to a sister Zahír has not seen since he was nine and has been putting out of his mind ever since. He writes them plainly, the way he says everything, and the falcon does not read them, which is the whole reason he can send them at all.",
+      "quote": "The desert hears what stone tries to hide."
+    },
+    {
+      "group": "Other Figures",
       "name": "Álira",
       "image": "/images/Alira - Blind listenerPage_2-high fidelity v3-2x.jpg",
       "title": "The Blind Listener",
       "kingdom": "No court claims her",
-      "knownFor": "Appearing wherever the future shifts.",
-      "bio": "Guards step aside without deciding to. She was at the Star Temple when the Oracle cooled, and at the palace well the day the Unifier did not wake, washing hands that bore no stain.",
+      "knownFor": "Appearing wherever the future shifts and carrying the last words of men nobody else would sit with.",
+      "bio": "Guards step aside without deciding to. She was at the Star Temple when the Oracle cooled, and at the palace well the day the Unifier did not wake, washing hands that bore no stain. She told a queen the children would not stand as one, and would not finish the warning.\n\nAfter the Broken Ridge she worked the line of the dying from the wrong end, asking each man what he wanted said, and to whom. She wrote nothing down. Every message arrived.",
       "quote": "They will want it shorter. Do not give it to them shorter."
+    },
+    {
+      "group": "Other Figures",
+      "name": "Ténai",
+      "title": "The First Witness",
+      "kingdom": "The grain country, Lion border",
+      "knownFor": "Surviving a raid inside a storage pit, and describing afterward exactly what she heard.",
+      "bio": "She was hidden through the whole of it — the doors, the animals, the thing that laughed like a man and was not one — and came out into a village emptied without blood.\n\nShe told it plainly and in order and did not make herself braver. Grown men found that harder to sit with than the raid. Adults have spent effort since trying to make her story shorter.",
+      "quote": "She did not make it braver. That is why it was useful."
     }
   ],
   "seoTitle": "Characters — Faces of K'Thari, Book I",
