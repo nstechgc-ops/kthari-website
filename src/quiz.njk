@@ -106,7 +106,12 @@ shareImage: /images/og-share.jpg
     if(navigator.share){$("sNative").hidden=false; $("sNative").onclick=function(){navigator.share({title:"Which Kingdom of K'Thari Would Claim You?",text:text,url:url}).catch(function(){})};}
     $("sCopy").onclick=function(){(navigator.clipboard?navigator.clipboard.writeText(text+" "+url):Promise.reject()).then(function(){$("sCopy").textContent="Link copied"},function(){prompt("Copy this link:",url)})};
     // Tag the MailerLite signup with the kingdom when the form has a hidden "kingdom" field
-    var tries=0,t=setInterval(function(){var f=document.querySelector('.rjoin input[name="fields[kingdom]"]'); if(f){f.value=r.beast;clearInterval(t)} if(++tries>40)clearInterval(t)},250);
+    var tries=0,t=setInterval(function(){
+      var form=document.querySelector('.rjoin form'); if(!form){ if(++tries>60)clearInterval(t); return; }
+      var f=form.querySelector('input[name="fields[kingdom]"]');
+      if(!f){ f=document.createElement('input'); f.type='hidden'; f.name='fields[kingdom]'; form.appendChild(f); }
+      f.value=r.beast.replace(/^The /,''); clearInterval(t);
+    },250);
     try{localStorage.setItem("kthariKingdom",k)}catch(e){}
     if(window.gtag)gtag("event","quiz_result",{kingdom:k});
     window.scrollTo({top:$("qres").getBoundingClientRect().top+window.scrollY-90,behavior:"smooth"});
