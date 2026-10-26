@@ -58,6 +58,6 @@ It has no throne. No army. No borders. This is not a kingdom; it is the spiritua
 
 ## Which kingdom are you?
 
-Tell us on [Instagram](https://www.instagram.com/07kthari/) or [TikTok](https://www.tiktok.com/@07kingdomsofkthari) — and if you want to see the kingdoms collide, the first four chapters of *Blood of the Seven* are free.
+[Take the quiz and find out](/quiz), then tell us on [Instagram](https://www.instagram.com/07kthari/) or [TikTok](https://www.tiktok.com/@07kingdomsofkthari) — and if you want to see the kingdoms collide, the first four chapters of *Blood of the Seven* are free.
 
 [Read the first 4 chapters free](#signup) · [Explore the kingdoms](/book#kingdoms) · [Get the book](https://books2read.com/bloodoftheseven)

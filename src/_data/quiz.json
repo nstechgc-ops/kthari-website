@@ -1,0 +1,291 @@
+{
+  "heading": "Which Kingdom Would Claim You?",
+  "intro": "Seven kingdoms. Seven sacred animals. And the Owl, which belongs to none. Answer eight questions and discover where you belong in K'Thari.",
+  "shareText": "The kingdoms have spoken. I belong to {beast}. Which kingdom would claim you?",
+  "slugs": [
+    "lion",
+    "elephant",
+    "crocodile",
+    "leopard",
+    "gorilla",
+    "serpent",
+    "hyena",
+    "owl"
+  ],
+  "results": {
+    "lion": {
+      "beast": "The Lion Kingdom",
+      "name": "Kingdom of the Sun",
+      "native": "Ūsángà wà Kofári",
+      "traits": "Sun · Law · Conquest · Rule",
+      "motto": "Where authority is sacred, and crowns are heavy.",
+      "image": "/images/Emblem - Lion.jpg",
+      "you": "You were made to carry weight others can't. When the room goes quiet, eyes turn to you, and you don't look away. You believe in order, in duty, and in the hard truth that someone has to decide."
+    },
+    "elephant": {
+      "beast": "The Elephant Kingdom",
+      "name": "The Land That Remembers",
+      "native": "Nàyámbé-Tárà",
+      "traits": "Memory · Endurance · Ancestral Law",
+      "motto": "Where history is alive.",
+      "image": "/images/Emblem - Elephant.jpg",
+      "you": "You remember what others forget. You are slow to judge and almost never wrong, and people come to you when they need the long view. To you, the past is not past. It is a teacher."
+    },
+    "crocodile": {
+      "beast": "The Crocodile Kingdom",
+      "name": "The Waiting Waters",
+      "native": "Mákòndaré",
+      "traits": "Rivers · Patience · Death · Stillness",
+      "motto": "Where nothing moves without purpose.",
+      "image": "/images/Emblem - Crocodile.jpg",
+      "you": "You don't rush. You watch, you wait, and when you finally move, it's already over. People mistake your stillness for calm. It's patience, and patience always wins."
+    },
+    "leopard": {
+      "beast": "The Leopard Kingdom",
+      "name": "The Hidden Crown",
+      "native": "Sényà-Nórù",
+      "traits": "Stealth · Intelligence · Precision",
+      "motto": "Where unseen power decides everything.",
+      "image": "/images/Emblem - Leopard.jpg",
+      "you": "You see what others miss and go where others can't. You work best alone, in the details, out of sight. You don't need credit. You need the job done perfectly."
+    },
+    "gorilla": {
+      "beast": "The Gorilla Kingdom",
+      "name": "The Unbroken Heights",
+      "native": "Mbárù-Kéntà",
+      "traits": "Strength · Discipline · Spiritual Restraint",
+      "motto": "Where power is mastered, not displayed.",
+      "image": "/images/Emblem - Gorilla.jpg",
+      "you": "Your strength is the kind you rarely have to show. You train in silence, you keep your word, and you don't break. Others shout. You simply hold the line."
+    },
+    "serpent": {
+      "beast": "The Serpent Kingdom",
+      "name": "The Coiled Dominion",
+      "native": "Bákungà",
+      "traits": "Secrets · Manipulation · Silent Power",
+      "motto": "Where truth is a weapon.",
+      "image": "/images/Emblem - Serpent.jpg",
+      "you": "You understand that the right word, at the right moment, is worth more than an army. You notice everything and reveal little. Most wars you'd end before anyone knew they'd started."
+    },
+    "hyena": {
+      "beast": "The Hyena Kingdom",
+      "name": "The Devouring Lands",
+      "native": "Zákhàrà-Vé",
+      "traits": "Hunger · Corruption · War",
+      "motto": "Where survival has rotted into cruelty.",
+      "image": "/images/Emblem - Hyena.jpg",
+      "you": "You are a survivor. Life has never handed you anything, so you learned to take your place and keep it. Others see hunger. You see a pack that never abandons its own."
+    },
+    "owl": {
+      "beast": "The Owl",
+      "name": "The Secret Lands",
+      "native": "K'Thari-Úmbrà",
+      "traits": "Balance · Prophecy · Ancient Law",
+      "motto": "It has no throne. It watches.",
+      "image": "/images/Emblem - Owl.jpg",
+      "you": "Rare. The Owl claims almost no one. You belong to no single crown. You see the whole board, the balance between all seven, and you watch over every one of them."
+    }
+  },
+  "questions": [
+    {
+      "q": "A crisis strikes your homeland. What do you do first?",
+      "answers": [
+        {
+          "text": "Take command. Someone has to.",
+          "primary": "lion",
+          "secondary": "gorilla"
+        },
+        {
+          "text": "Search the old records. This has happened before.",
+          "primary": "elephant",
+          "secondary": "owl"
+        },
+        {
+          "text": "Stay still. Watch. Act only when the moment is certain.",
+          "primary": "crocodile",
+          "secondary": "leopard"
+        },
+        {
+          "text": "Gather your people and take what you need to survive.",
+          "primary": "hyena",
+          "secondary": "gorilla"
+        }
+      ]
+    },
+    {
+      "q": "Which gift would you ask of the gods?",
+      "answers": [
+        {
+          "text": "A crown no one dares to question",
+          "primary": "lion",
+          "secondary": "serpent"
+        },
+        {
+          "text": "A memory that never fades",
+          "primary": "elephant",
+          "secondary": "owl"
+        },
+        {
+          "text": "The power to move unseen",
+          "primary": "leopard",
+          "secondary": "serpent"
+        },
+        {
+          "text": "Strength that never breaks",
+          "primary": "gorilla",
+          "secondary": "hyena"
+        }
+      ]
+    },
+    {
+      "q": "Your greatest weapon is…",
+      "answers": [
+        {
+          "text": "Words. The right whisper in the right ear.",
+          "primary": "serpent",
+          "secondary": "lion"
+        },
+        {
+          "text": "Patience",
+          "primary": "crocodile",
+          "secondary": "elephant"
+        },
+        {
+          "text": "Precision",
+          "primary": "leopard",
+          "secondary": "crocodile"
+        },
+        {
+          "text": "Hunger. I want it more than anyone.",
+          "primary": "hyena",
+          "secondary": "lion"
+        }
+      ]
+    },
+    {
+      "q": "Where do you feel most at home?",
+      "answers": [
+        {
+          "text": "Sunlit plains below a great palace",
+          "primary": "lion",
+          "secondary": "hyena"
+        },
+        {
+          "text": "Ancient forests where the old ones walk",
+          "primary": "elephant",
+          "secondary": "gorilla"
+        },
+        {
+          "text": "Dark rivers and hidden deltas",
+          "primary": "crocodile",
+          "secondary": "serpent"
+        },
+        {
+          "text": "Mist-wrapped mountain heights",
+          "primary": "gorilla",
+          "secondary": "owl"
+        }
+      ]
+    },
+    {
+      "q": "A rival insults you in public. You…",
+      "answers": [
+        {
+          "text": "Answer calmly. You never need to raise your voice.",
+          "primary": "gorilla",
+          "secondary": "elephant"
+        },
+        {
+          "text": "Smile. They'll regret it, eventually.",
+          "primary": "serpent",
+          "secondary": "crocodile"
+        },
+        {
+          "text": "Vanish. By morning you know everything about them.",
+          "primary": "leopard",
+          "secondary": "serpent"
+        },
+        {
+          "text": "Strike back now, with your whole pack behind you.",
+          "primary": "hyena",
+          "secondary": "lion"
+        }
+      ]
+    },
+    {
+      "q": "What would people say about you?",
+      "answers": [
+        {
+          "text": "Born to lead",
+          "primary": "lion",
+          "secondary": "gorilla"
+        },
+        {
+          "text": "Wise beyond their years",
+          "primary": "elephant",
+          "secondary": "owl"
+        },
+        {
+          "text": "Impossible to read",
+          "primary": "serpent",
+          "secondary": "leopard"
+        },
+        {
+          "text": "A survivor. Nothing keeps them down.",
+          "primary": "hyena",
+          "secondary": "crocodile"
+        }
+      ]
+    },
+    {
+      "q": "Night falls over K'Thari. You are…",
+      "answers": [
+        {
+          "text": "Moving through the shadows on a mission",
+          "primary": "leopard",
+          "secondary": "hyena"
+        },
+        {
+          "text": "Training in silence while others sleep",
+          "primary": "gorilla",
+          "secondary": "leopard"
+        },
+        {
+          "text": "Watching the stars, reading what they foretell",
+          "primary": "owl",
+          "secondary": "elephant"
+        },
+        {
+          "text": "Resting beside still water, eyes half open",
+          "primary": "crocodile",
+          "secondary": "serpent"
+        }
+      ]
+    },
+    {
+      "q": "What matters most in the end?",
+      "answers": [
+        {
+          "text": "That the realm stands as one",
+          "primary": "lion",
+          "secondary": "owl"
+        },
+        {
+          "text": "That I held the secret that decided everything",
+          "primary": "serpent",
+          "secondary": "leopard"
+        },
+        {
+          "text": "Balance. No single crown should rule them all.",
+          "primary": "owl",
+          "secondary": "elephant"
+        },
+        {
+          "text": "That my people never go hungry again",
+          "primary": "hyena",
+          "secondary": "gorilla"
+        }
+      ]
+    }
+  ]
+}

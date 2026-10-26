@@ -54,6 +54,7 @@ ml('account', '2736304');
     <a href="/gallery"{% if nav == 'gallery' %} aria-current="page"{% endif %}>Gallery</a>
     {% if collections.news.length %}<a href="/news"{% if nav == 'news' %} aria-current="page"{% endif %}>News</a>{% endif %}
     <a href="/book#kingdoms">The Seven Kingdoms</a>
+    <a href="/quiz"{% if nav == 'quiz' %} aria-current="page"{% endif %}>Which Kingdom Are You?</a>
   </div>
 </nav>
 {% endif %}
@@ -69,6 +70,7 @@ ml('account', '2736304');
       <a href="/author">The Author</a>
       <a href="/characters">Characters</a>
       <a href="/gallery">Gallery</a>
+      <a href="/quiz">Kingdom Quiz</a>
       <a href="/news#reviews">Reviews</a>
       <a href="/press">Press</a>
       <a href="{{ site.buyUrl }}" target="_blank" rel="noopener">Buy</a>

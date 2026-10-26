@@ -1,0 +1,118 @@
+---
+layout: base.njk
+permalink: /quiz.html
+nav: quiz
+signupInline: true
+seoTitle: "Which Kingdom of K'Thari Would Claim You? — Quiz"
+seoDescription: "Lion, Elephant, Crocodile, Leopard, Gorilla, Serpent, Hyena — or the rare Owl. Answer eight questions and discover which kingdom of K'Thari would claim you."
+shareImage: /images/og-share.jpg
+---
+<main class="quiz">
+  <section class="qhero">
+    <div class="wrap center" style="max-width:760px">
+      <p class="eyebrow">The Seven Kingdoms of K'Thari</p>
+      <h1>{{ quiz.heading }}</h1>
+      <p class="lead">{{ quiz.intro }}</p>
+    </div>
+  </section>
+
+  <section class="qbox" aria-live="polite">
+    <div class="wrap" style="max-width:760px">
+      <div id="qstart" class="qcard center">
+        <div class="qemblems" aria-hidden="true">{% for s in quiz.slugs %}<img src="/images/quiz/emblem-{{ s }}.jpg" alt="" loading="lazy">{% endfor %}</div>
+        <p>Eight questions. No wrong answers. The Owl claims almost no one.</p>
+        <button class="btn" type="button" id="qgo">Begin</button>
+      </div>
+
+      <div id="qrun" class="qcard" hidden>
+        <div class="qprog"><span id="qbar"></span></div>
+        <p class="eyebrow" id="qnum"></p>
+        <h2 id="qtext"></h2>
+        <div class="qans" id="qans"></div>
+        <button class="qback" type="button" id="qback">&lsaquo; Back</button>
+      </div>
+
+      <div id="qres" class="qcard qresult" hidden>
+        <p class="eyebrow">The kingdoms have spoken</p>
+        <img id="rimg" class="remblem" src="" alt="">
+        <h2 id="rbeast"></h2>
+        <p class="rname" id="rname"></p>
+        <p class="rtraits" id="rtraits"></p>
+        <div class="orn" aria-hidden="true">&#9670;&#9671;&#9670;</div>
+        <p class="rmotto" id="rmotto"></p>
+        <p class="ryou" id="ryou"></p>
+
+        <div class="rshare">
+          <p class="eyebrow">Share your kingdom</p>
+          <div class="btnrow" style="justify-content:center">
+            <button class="btn" type="button" id="sNative" hidden>Share</button>
+            <a class="btn ghost" id="sFb" target="_blank" rel="noopener">Facebook</a>
+            <a class="btn ghost" id="sX" target="_blank" rel="noopener">X</a>
+            <a class="btn ghost" id="sImg" download>Image for Instagram / TikTok</a>
+            <button class="btn ghost" type="button" id="sCopy">Copy link</button>
+          </div>
+        </div>
+
+        <div class="rjoin">
+          <h3>Claim your place in <span id="rjoinname"></span></h3>
+          <p>Get the first four chapters of <em>Blood of the Seven</em> free, plus lore drops for your kingdom and first word on Book II.</p>
+          <div class="ml-embedded" data-form="7aSBMO"></div>
+        </div>
+
+        <div class="btnrow" style="justify-content:center;margin-top:1.6rem">
+          <a class="btn" href="{{ site.buyUrl }}" target="_blank" rel="noopener">Get Book I</a>
+          <button class="btn ghost" type="button" id="qagain">Take it again</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script>
+(function(){
+  var Q={{ quiz.questions | dump | safe }}, R={{ quiz.results | dump | safe }}, ORDER={{ quiz.slugs | dump | safe }};
+  var BASE={{ site.url | dump | safe }}, SHARE={{ quiz.shareText | dump | safe }};
+  var $=function(id){return document.getElementById(id)};
+  var i=0, picks=[];
+  function show(el){["qstart","qrun","qres"].forEach(function(x){$(x).hidden=(x!==el)});}
+  function render(){
+    var q=Q[i]; $("qnum").textContent="Question "+(i+1)+" of "+Q.length; $("qtext").textContent=q.q;
+    $("qbar").style.width=(i/Q.length*100)+"%"; $("qback").hidden=(i===0);
+    var box=$("qans"); box.innerHTML="";
+    q.answers.forEach(function(a,n){var b=document.createElement("button");b.type="button";b.className="qopt";b.textContent=a.text;
+      b.onclick=function(){picks[i]=n; i++; if(i<Q.length){render();} else {finish();}}; box.appendChild(b);});
+    box.firstChild.focus({preventScroll:true});
+  }
+  function finish(){
+    var s={}; ORDER.forEach(function(k){s[k]=0});
+    picks.forEach(function(n,qi){var a=Q[qi].answers[n]; s[a.primary]+=2; s[a.secondary]+=1;});
+    var best=Math.max.apply(null,ORDER.map(function(k){return s[k]}));
+    var tied=ORDER.filter(function(k){return s[k]===best});
+    var win=tied[0];
+    if(tied.length>1){ // tie-break: the latest answer whose primary is among the tied
+      for(var qi=picks.length-1;qi>=0;qi--){var p=Q[qi].answers[picks[qi]].primary; if(tied.indexOf(p)>-1){win=p;break;}}
+    }
+    if(win==="owl" && tied.length>1){ win=tied.filter(function(k){return k!=="owl"})[0]||"owl"; } // the Owl only claims outright
+    result(win);
+  }
+  function result(k){
+    var r=R[k]; show("qres");
+    $("rimg").src="/images/quiz/emblem-"+k+".jpg"; $("rimg").alt=r.beast+" emblem";
+    $("rbeast").textContent=r.beast; $("rname").textContent="“"+r.name+"” · "+r.native; $("rtraits").textContent=r.traits;
+    $("rmotto").textContent=r.motto; $("ryou").textContent=r.you; $("rjoinname").textContent=r.beast;
+    var url=BASE+"/quiz/"+k, text=SHARE.replace("{beast}",r.beast);
+    $("sFb").href="https://www.facebook.com/sharer/sharer.php?u="+encodeURIComponent(url);
+    $("sX").href="https://twitter.com/intent/tweet?text="+encodeURIComponent(text)+"&url="+encodeURIComponent(url);
+    $("sImg").href="/images/quiz/square-"+k+".jpg"; $("sImg").setAttribute("download","kthari-"+k+".jpg");
+    if(navigator.share){$("sNative").hidden=false; $("sNative").onclick=function(){navigator.share({title:"Which Kingdom of K'Thari Would Claim You?",text:text,url:url}).catch(function(){})};}
+    $("sCopy").onclick=function(){(navigator.clipboard?navigator.clipboard.writeText(text+" "+url):Promise.reject()).then(function(){$("sCopy").textContent="Link copied"},function(){prompt("Copy this link:",url)})};
+    // Tag the MailerLite signup with the kingdom when the form has a hidden "kingdom" field
+    var tries=0,t=setInterval(function(){var f=document.querySelector('.rjoin input[name="fields[kingdom]"]'); if(f){f.value=r.beast;clearInterval(t)} if(++tries>40)clearInterval(t)},250);
+    try{localStorage.setItem("kthariKingdom",k)}catch(e){}
+    if(window.gtag)gtag("event","quiz_result",{kingdom:k});
+    window.scrollTo({top:$("qres").getBoundingClientRect().top+window.scrollY-90,behavior:"smooth"});
+  }
+  $("qgo").onclick=function(){i=0;picks=[];show("qrun");render();};
+  $("qback").onclick=function(){if(i>0){i--;render();}};
+  $("qagain").onclick=function(){i=0;picks=[];show("qrun");render();window.scrollTo({top:0,behavior:"smooth"})};
+})();
+</script>

@@ -270,3 +270,25 @@ content:
       - { name: siteName, label: "Site name", type: string }
       - { name: author, label: "Author name", type: string }
       - { name: url, label: "Website address", type: string }
+  - name: quiz
+    label: Kingdom Quiz
+    type: file
+    path: src/_data/quiz.json
+    fields:
+      - { name: heading, label: "Quiz title", type: string }
+      - { name: intro, label: "Intro text", type: text }
+      - { name: shareText, label: "Share message ({beast} = the reader's kingdom)", type: string }
+      - name: questions
+        label: Questions
+        type: object
+        list: true
+        fields:
+          - { name: q, label: Question, type: string }
+          - name: answers
+            label: "Answers (primary = kingdom it points to: lion, elephant, crocodile, leopard, gorilla, serpent, hyena, owl)"
+            type: object
+            list: true
+            fields:
+              - { name: text, label: Answer, type: string }
+              - { name: primary, label: "Main kingdom (+2)", type: string }
+              - { name: secondary, label: "Second kingdom (+1)", type: string }

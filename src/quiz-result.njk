@@ -1,0 +1,34 @@
+---
+layout: base.njk
+pagination:
+  data: quiz.slugs
+  size: 1
+  alias: slug
+permalink: "/quiz/{{ slug }}.html"
+nav: quiz
+eleventyComputed:
+  seoTitle: "I belong to {{ quiz.results[slug].beast }} — Which Kingdom of K'Thari Would Claim You?"
+  seoDescription: "{{ quiz.results[slug].motto }} Take the eight-question quiz and discover which of the seven kingdoms of K'Thari would claim you."
+  shareImage: "/images/quiz/og-{{ slug }}.jpg"
+---
+{% set r = quiz.results[slug] %}
+<main class="quiz">
+  <section class="qbox">
+    <div class="wrap" style="max-width:760px">
+      <div class="qcard qresult">
+        <p class="eyebrow">The kingdoms have spoken</p>
+        <img class="remblem" src="/images/quiz/emblem-{{ slug }}.jpg" alt="{{ r.beast }} emblem">
+        <h1>{{ r.beast }}</h1>
+        <p class="rname">“{{ r.name }}” · {{ r.native }}</p>
+        <p class="rtraits">{{ r.traits }}</p>
+        <div class="orn" aria-hidden="true">&#9670;&#9671;&#9670;</div>
+        <p class="rmotto">{{ r.motto }}</p>
+        <p class="ryou">{{ r.you }}</p>
+        <div class="btnrow" style="justify-content:center;margin-top:1.4rem">
+          <a class="btn" href="/quiz">Which kingdom would claim you?</a>
+          <a class="btn ghost" href="/book#kingdoms">Explore the kingdoms</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
