@@ -205,6 +205,7 @@
     {
       "group": "The Leopard Kingdom",
       "name": "Sényà Káli",
+      "image": "/images/Sénya KaliPage_2-high fidelity v3-2x.jpg",
       "title": "The Night Silk",
       "kingdom": "Sényà-Nórù — The Leopard Kingdom",
       "knownFor": "Running the Hidden Crown's networks across the Seven — and possessing one flaw, which exactly one person has found.",
@@ -214,6 +215,7 @@
     {
       "group": "The Leopard Kingdom",
       "name": "General Nalayé",
+      "image": "/images/General Nalayé and the silent leopardPage_2-high fidelity v3-2x.jpg",
       "title": "Nalayé the Shadow General",
       "kingdom": "Sényà-Nórù — The Leopard Kingdom",
       "knownFor": "Commanding the Leopard's covert strike forces, and telling the Lion heir first that the hyenas were moving strangely.",
@@ -337,6 +339,7 @@
     {
       "group": "The Hyena Territories",
       "name": "Zákhira",
+      "image": "/images/ZakhiraPage_2-high fidelity v3-2625w.jpg",
       "title": "The Girl Nobody Will Name",
       "kingdom": "Zákhàrà-Vé and Ūsángà wà Kofári",
       "knownFor": "Being the only child in that courtyard who is not the king's.",
@@ -440,6 +443,7 @@
     {
       "group": "The Bonded",
       "name": "Tárun",
+      "image": "/images/Tarun+.jpg",
       "title": "The Lion of the Heir",
       "kingdom": "Ūsángà wà Kofári — bonded to Prince Kofáni",
       "knownFor": "Choosing a child before the child could stand, and never afterward treating him as one.",
@@ -449,6 +453,7 @@
     {
       "group": "The Bonded",
       "name": "Zaré",
+      "image": "/images/Zare+.jpg",
       "title": "The Restless",
       "kingdom": "Ūsángà wà Kofári — bonded to Prince Koránu",
       "knownFor": "Sharing his prince's temper, his courage, and his tells.",
@@ -476,6 +481,7 @@
     {
       "group": "The Bonded",
       "name": "Bayad",
+      "image": "/images/Rih the falcon+.jpg",
       "title": "The Weather Out of the Desert",
       "kingdom": "The Desert Kingdom — bonded to Prince Zahír al-Kharim",
       "knownFor": "Walking out of the sand into a nine-year-old's courtyard, lying down at his feet, and never once explaining itself since.",
@@ -503,7 +509,7 @@
     {
       "group": "The Bonded",
       "name": "The Sun Veil Lionesses",
-      "image": "/images/War lionesses at warPage_2-high fidelity v3-2625w.jpg",
+      "image": "/images/Sunveil lionesses+.jpg",
       "title": "The Ones Who Agree",
       "kingdom": "Ūsángà wà Kofári — bonded to the Sun Veil Legion",
       "knownFor": "Being the only bond in the empire a woman is given rather than born to — chosen in a swept yard at dawn, by the lioness, not the child.",
