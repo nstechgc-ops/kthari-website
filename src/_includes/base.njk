@@ -63,10 +63,9 @@ ml('account', '2736304');
 {% if not bare and not signupInline %}{% include "signup.njk" %}{% endif %}
 {% if not bare %}
 <footer class="foot">
-  <div class="wrap">
-    <div>&copy; <span id="yr">2026</span> {{ site.author }} &middot; {{ site.siteName }} &middot; Website by <a href="https://nstechglobal.com" target="_blank" rel="noopener">NS Tech Global Consulting</a></div>
-    <nav class="fl">
-      <a href="/">Home</a>
+  <div class="wrap ftop">
+    <a class="brand" href="/">K'<b>THARI</b></a>
+    <nav class="fl" aria-label="Footer">
       <a href="/book">The Book</a>
       <a href="/author">The Author</a>
       <a href="/characters">Characters</a>
@@ -74,9 +73,15 @@ ml('account', '2736304');
       <a href="/quiz">Kingdom Quiz</a>
       <a href="/news#reviews">Reviews</a>
       <a href="/press">Press</a>
-      <a href="{{ site.buyUrl }}" target="_blank" rel="noopener">Buy</a>
-      {% for s in site.socials %}<a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.label }}</a>{% endfor %}
+      <a class="fbuy" href="{{ site.buyUrl }}" target="_blank" rel="noopener">Buy the Book</a>
     </nav>
+    <nav class="fsocial" aria-label="Follow K'Thari">
+      {% for s in site.socials %}<a href="{{ s.url }}" target="_blank" rel="noopener" aria-label="{{ s.label }}" title="{{ s.label }}">{% include "social-icon.njk" %}</a>{% endfor %}
+    </nav>
+  </div>
+  <div class="wrap fbot">
+    <span>&copy; <span id="yr">2026</span> {{ site.author }} &middot; {{ site.siteName }}</span>
+    <span>Website by <a href="https://nstechglobal.com" target="_blank" rel="noopener">NS Tech Global Consulting</a></span>
   </div>
 </footer>
 <script>
