@@ -86,6 +86,7 @@
     {
       "group": "The Lion Kingdom",
       "name": "Sengaru",
+      "image": "/images/SengaruPage_2-high fidelity v3-2x.jpg",
       "title": "The First Blade",
       "kingdom": "Ūsángà wà Kofári — The Lion Kingdom",
       "knownFor": "Teaching three generations of princes the one lesson a man remembers once the noise starts.",
@@ -95,6 +96,7 @@
     {
       "group": "The Lion Kingdom",
       "name": "Lord Haroun",
+      "image": "/images/Lord HarounPage_2-high fidelity v3-2x.jpg",
       "title": "Keeper of the Border Ledger",
       "kingdom": "Ūsángà wà Kofári — The Lion Kingdom",
       "knownFor": "Desert-born, Lion-sworn — the hand the empire's border ledger passes under.",
@@ -104,6 +106,7 @@
     {
       "group": "The Lion Kingdom",
       "name": "Sekári",
+      "image": "/images/Sekari beneath the fiery chainsPage_2-high fidelity v3-2x-1.jpg",
       "title": "The Rebel Brother",
       "kingdom": "Ūsángà wà Kofári — The Lion Bloodline",
       "knownFor": "The rebellion that nearly shattered the empire.",
@@ -132,6 +135,7 @@
     {
       "group": "The Elephant Kingdom",
       "name": "Nàyáni",
+      "image": "/images/NayaniPage_2-high fidelity v3-2x.jpg",
       "title": "The One Who Does Not Forget",
       "kingdom": "Nàyámbé-Tárà — The Elephant Kingdom",
       "knownFor": "Perfect recall, delivered flatly and with his eyes open.",
@@ -151,6 +155,7 @@
     {
       "group": "The Crocodile Kingdom",
       "name": "Princess Nyira",
+      "image": "/images/Crocodile Princess NyiraPage_2-high fidelity v3-2x.jpg",
       "title": "Nyira of the Waiting Waters",
       "kingdom": "Mákòndaré — The Crocodile Kingdom",
       "knownFor": "Reading, from a cut rope, exactly what a fire was designed to accomplish.",
@@ -160,6 +165,7 @@
     {
       "group": "The Crocodile Kingdom",
       "name": "Rékani",
+      "image": "/images/RekaniPage_2-high fidelity v3-2x (1).jpg",
       "title": "The One Who Reads the Water",
       "kingdom": "Mákòndaré — The Crocodile Kingdom",
       "knownFor": "Weather, timing, and the patience of the river-people — together with the flaw that grows from it.",
@@ -169,6 +175,7 @@
     {
       "group": "The Crocodile Kingdom",
       "name": "Ódu and Ochára",
+      "image": "/images/Odu and OcharaPage_2-high fidelity v3-2x.jpg",
       "title": "The Tide-Born",
       "kingdom": "Mákòndaré — The Crocodile Kingdom",
       "knownFor": "Born beneath a rare convergence of tides, and watched more closely than the throne.",
@@ -216,6 +223,7 @@
     {
       "group": "The Leopard Kingdom",
       "name": "Àdemi",
+      "image": "/images/SenyaruPage_2-high fidelity v3-2x.jpg",
       "title": "Never Where You Left Him",
       "kingdom": "Sényà-Nórù — The Leopard Kingdom",
       "knownFor": "Moving unseen, already beyond his tutors — and enjoying it, which is the part that will cost him.",
@@ -245,6 +253,7 @@
     {
       "group": "The Gorilla Kingdom",
       "name": "Prince Mbáru Késha",
+      "image": "/images/Mbáru Késha and silverbackPage_2-high fidelity v3-2625w.jpg",
       "title": "Mbáru Késha the Living Mountain",
       "kingdom": "Mbárù-Kéntà — The Gorilla Kingdom",
       "knownFor": "Embodying disciplined strength — and keeping the most dangerous piece of information in K'Thari to himself.",
@@ -263,6 +272,7 @@
     {
       "group": "The Gorilla Kingdom",
       "name": "Lord Kémbara",
+      "image": "/images/Lord Kembara+.jpg",
       "title": "Kémbara the Unthrown — Lord of the Eastern Pass",
       "kingdom": "Mbárù-Kéntà — The Gorilla Kingdom",
       "knownFor": "Never taken off his feet — on the wrestling sand or in council — and guarding the road the Unifier rode for twenty years and never explained.",
